@@ -43,8 +43,10 @@ cd /usr/src/cudnn_samples_v7/mnistCUDNN
 
 sudo make    
 
-./mnistCUDNN       ##sudo chmod a+x mnistCUDNN # 
+./mnistCUDNN       # sudo chmod a+x mnistCUDNN # 
 
 
+
+###https://www.yahboom.com/build.html?id=2503&cid=301
 
 
