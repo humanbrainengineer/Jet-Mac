@@ -1,0 +1,50 @@
+1.
+
+sudo apt-get update
+sudo apt-get full-upgrade
+
+
+
+2.
+TensorRT /usr/src/tensorrt/samples/
+CUDA       /usr/local/cuda-/samples/
+cuDNN     /usr/src/cudnn_samples_v7/
+Multimedia API        /usr/src/tegra_multimedia_api/
+VisionWorks     /usr/share/visionworks/sources/samples/ /usr/share/visionworks-tracking/sources/samples/ /usr/share/visionworks-sfm/sources/samples/
+OpenCV   /usr/share/OpenCV/samples/
+
+
+
+2.1  checking the CUDA：
+
+sudo vim  ~/.bashrc
+
+adding：
+
+export CUDA_HOME=/usr/local/cuda-10.2
+export LD_LIBRARY_PATH=/usr/local/cuda-10.2/lib64:$LD_LIBRARY_PATH
+export PATH=/usr/local/cuda-10.2/bin:$PATH
+
+
+source ~/.bashrc
+nvcc  -V
+
+
+2.2  checking the opencv
+
+pkg-config opencv --modversion
+
+
+
+2.3  checking the   cudnn
+
+
+cd /usr/src/cudnn_samples_v7/mnistCUDNN
+
+sudo make    
+
+./mnistCUDNN       ##sudo chmod a+x mnistCUDNN # 
+
+
+
+
