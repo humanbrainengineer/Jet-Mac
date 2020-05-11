@@ -1,0 +1,59 @@
+1.
+
+Update software source command: sudo apt update
+Update system command: sudo apt upgrade
+
+2.
+Regarding the ： Desktop-sharing
+
+sudo apt install vino
+sudo vi /usr/share/glib-2.0/schemas/org.gnome.Vino.gschema.xml
+
+
+Adding ：
+
+
+<key name="enabled" type="b">
+<summary>Enable remote access to the desktop</summary>
+<description>
+If true, allows remote access to the desktop via the RFB
+protocol. Users on remote machines may then connect to the
+desktop using a VNC viewer.
+</description>
+<default>false</default>
+</key>
+
+4. 
+sudo glib-compile-schemas /usr/share/glib-2.0/schemas
+
+5. 
+
+/usr/lib/vino/vino-server 
+
+
+6.
+
+sudo apt-get install dconf-editor
+
+
+7.
+
+execute ： dconf-editor
+
+org > gnome > desktop > remote-access
+
+
+and then remove ： “prompt-enabled” and “require-encryption”
+
+
+8.
+Install the VNCViewer， https://www.realvnc.com/en/connect/download/viewer/
+
+
+9. execute ifconfig on Jetson Nano
+
+
+10. Input the ip,   192.168.1.10::5900
+
+
+
