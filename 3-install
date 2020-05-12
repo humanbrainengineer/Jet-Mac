@@ -13,3 +13,26 @@ sudo pip3 install -U numpy grpcio absl-py py-cpuinfo psutil portpicker six mock 
 2.tensorflow:
 sudo pip3 install --extra-index-url https://developer.download.nvidia.com/compute/redist/jp/v43 tensorflow-gpu==2.0.0+nv20.1
 #https://developer.download.nvidia.com/compute/redist/jp/v43/
+
+
+3.testing the tensorflow：
+
+import tensorflow as tf
+print(tf.__version__)
+
+
+4.  Install the keras：
+sudo pip3 install keras
+
+
+
+5. Install the pytorch：
+wget https://nvidia.box.com/shared/static/ncgzus5o23uck9i5oth2n8n06k340l6k.whl -O torch-1.4.0-cp36-cp36m-linux_aarch64.whl
+sudo apt-get install python3-pip libopenblas-base
+sudo pip3 install Cython
+sudo pip3 install numpy torch-1.4.0-cp36-cp36m-linux_aarch64.whl
+ 
+
+
+
+
