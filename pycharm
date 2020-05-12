@@ -1,0 +1,26 @@
+1.
+
+ Tools -> Deployment -> Configuration
+ 
+2.
+
+Configuration,“+”---》SFTP，server name  as： Jetson-nano
+
+
+3.
+
+Connection：Host；User name；PassWord 
+No need the "Root path" 
+Autodetect  Jetson-nano。
+
+
+4.
+Mappings 
+Local path 
+Deployment path 
+
+
+5.
+
+Tools -> Deployment -> Brose Remote Host 
+then you can see the Jetson-nano
