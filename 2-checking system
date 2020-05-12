@@ -21,9 +21,9 @@ sudo vim  ~/.bashrc
 
 adding：
 
-export CUDA_HOME=/usr/local/cuda-10.2
-export LD_LIBRARY_PATH=/usr/local/cuda-10.2/lib64:$LD_LIBRARY_PATH
-export PATH=/usr/local/cuda-10.2/bin:$PATH
+export CUDA_HOME=/usr/local/cuda-10.0
+export LD_LIBRARY_PATH=/usr/local/cuda-10.0/lib64:$LD_LIBRARY_PATH
+export PATH=/usr/local/cuda-10.0/bin:$PATH
 
 
 source ~/.bashrc
