@@ -28,17 +28,13 @@ desktop using a VNC viewer.
 4. 
 sudo glib-compile-schemas /usr/share/glib-2.0/schemas
 
-5. 
 
-/usr/lib/vino/vino-server  ####-------------------------------！ Put it to start with System.
-
-
-6.
+5.
 
 sudo apt-get install dconf-editor
 
 
-7.
+6.
 
 execute ： dconf-editor
 
@@ -48,15 +44,19 @@ org > gnome > desktop > remote-access
 and then remove ： “prompt-enabled” and “require-encryption”
 
 
-8.
+7.
 Install the VNCViewer， https://www.realvnc.com/en/connect/download/viewer/
 
 
-9. execute ifconfig on Jetson Nano for checking the IP
+8. execute ifconfig on Jetson Nano for checking the IP
 
 
-10. Input the ip,   192.168.1.10::5900
+9. Input the ip,   192.168.1.10::5900
 
+
+10.
+
+/usr/lib/vino/vino-server  ####-------------------------------！ Put it to start with System.
 
 
 
