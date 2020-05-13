@@ -2,8 +2,8 @@ https://tensorflow.google.cn/install/source#linux
 
 1.
 
-sudo apt-get update
-sudo apt-get full-upgrade
+sudo apt install python3-pip
+sudo pip3 install --upgrade pip
 
 
 
