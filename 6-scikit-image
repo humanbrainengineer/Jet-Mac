@@ -1,3 +1,15 @@
+Part1 ：  
+
+https://github.com/scikit-image/scikit-image
+
+
+
+#-------------------------
+
+
+Part 2：
+
+
 直接sudo pip3 install scikit-image 安裝scikit-image會失敗
 
 以下解法：
