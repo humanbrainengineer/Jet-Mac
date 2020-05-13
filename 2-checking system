@@ -39,6 +39,9 @@ nvcc  -V
 
 pkg-config opencv --modversion
 
+or
+
+opencv_version
 
 
 2.3  checking the   cudnn
