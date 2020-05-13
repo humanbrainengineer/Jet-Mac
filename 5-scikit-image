@@ -1,0 +1,36 @@
+直接sudo pip3 install scikit-image 安裝scikit-image會失敗
+
+以下解法：
+
+先行安裝需要的套件包
+sudo pip3 install Cython
+
+sudo -H pip3 install joblib numpy scipy
+
+sudo -H pip3 install scikit-learn --index-url https://piwheels.org/simple
+(如果安裝失敗嘗試使用這行安裝: sudo pip3 install scikit-learn)
+
+
+接下來直接安裝scikit-image
+sudo pip3 install scikit-image 會出現錯誤
+
+ft2build.h:沒有那個文件或目錄
+
+以下是安裝scikit-image指令：
+
+sudo apt-get install python-dev libfreetype6-dev
+
+sudo apt-get install libfreetype6-dev
+
+sudo ln -s /usr/include/freetype2/freetype/ /usr/include/freetype
+(freetype頭文件沒在標準路徑, 所以建立軟連接)
+
+sudo apt-get install libfontconfig1-dev
+
+sudo -H pip3 install scikit-image  (再次安裝scikit-image)
+
+安裝完畢, 可嘗試在from skimage.measure import compare_ssim 應該會成功
+
+參考 references:
+
+https://blog.csdn.net/u012226330/article/details/17611749
