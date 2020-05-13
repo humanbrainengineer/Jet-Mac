@@ -1,6 +1,22 @@
 Requirement: https://tensorflow.google.cn/install/source#linux
 
 
+0.  Do not use next time.
+
+sudo vim /usr/bin/pip3
+ 
+
+from pip import main
+if __name__ == '__main__':
+    sys.exit(main())
+
+To:   
+
+from pip import __main__
+if __name__ == '__main__':
+    sys.exit(__main__._main())
+ 
+
 
 1.
 
