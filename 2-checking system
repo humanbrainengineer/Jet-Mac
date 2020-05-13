@@ -70,31 +70,6 @@ Nsight Compute 2019.3
 SDK Manager 1.0.0
 JetPack 4.3 components:
 
-L4T R32.3.1 (K4.9)
-Ubuntu 18.04 LTS aarch64
-CUDA 10.0
-cuDNN 7.6.3
-TensorRT 6.0.1
-VisionWorks 1.6
-OpenCV 4.1
-Nsight Systems 2019.6
-Nsight Graphics 2019.5
-Nsight Compute 2019.3
-SDK Manager 1.0.0
-JetPack 4.3 components:
-
-L4T R32.3.1 (K4.9)
-Ubuntu 18.04 LTS aarch64
-CUDA 10.0
-cuDNN 7.6.3
-TensorRT 6.0.1
-VisionWorks 1.6
-OpenCV 4.1
-Nsight Systems 2019.6
-Nsight Graphics 2019.5
-Nsight Compute 2019.3
-SDK Manager 1.0.0
-GCC 7.5.0
 
 ###https://www.yahboom.com/build.html?id=2503&cid=301
 
