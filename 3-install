@@ -72,14 +72,14 @@ sudo pip3 install keras
 pip uninstall apex
 git clone https://www.github.com/nvidia/apex
 cd apex
-python setup.py install
+sudo python3.6 setup.py install
 
 
 7.
 sudo apt-get install libjpeg-dev zlib1g-dev
 git clone -b v0.3.0 https://github.com/pytorch/vision torchvision   #0.6.0
 cd torchvision
-python3.6 setup.py install
+sudo python3.6 setup.py install
 #  https://blog.csdn.net/u011119817/article/details/99679350
 
 
