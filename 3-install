@@ -59,6 +59,15 @@ import torch
 print(torch.__version__)
 
 
+4.5-----arm (option)
+
+sudo apt install liblapack-dev
+sudo apt install libblas-dev
+sudo apt install gfortran
+
+
+
+
 
 5.  Install the keras：
 
