@@ -62,7 +62,7 @@ sudo pip3 install h5py
 sudo pip3 install astor termcolor protobuf keras-applications keras-preprocessing wrapt google-pasta
 
 sudo apt-get install zip libjpeg8-dev
-sudo apt install python3-dev
+
 
 
 Python Packages：
