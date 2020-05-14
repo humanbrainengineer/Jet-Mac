@@ -22,7 +22,7 @@ if __name__ == '__main__':
  
 
 
-1.
+1.  https://blog.csdn.net/alphonse2017/article/details/89493645
 sudo apt-get install build-essential cmake  pkg-config
 sudo apt-get install libprotobuf-dev libleveldb-dev libsnappy-dev  protobuf-compiler
 sudo apt-get install libhdf5-serial-dev hdf5-tools zlib1g-dev  libjpeg9-dev libhdf5-dev
@@ -35,7 +35,7 @@ sudo apt-get install gfortran libopenblas-dev liblapack-dev libatlas-base-dev
 
 
 
-pip3 install testresources
+sudo pip3 install testresources
 sudo pip3 install numpy grpcio absl-py py-cpuinfo psutil portpicker six mock requests gast
 sudo pip3 install h5py 
 sudo pip3 install astor termcolor protobuf keras-applications keras-preprocessing wrapt google-pasta
@@ -43,7 +43,8 @@ sudo pip3 install astor termcolor protobuf keras-applications keras-preprocessin
 sudo apt-get install zip libjpeg8-dev
 
 
-
+sudo pip3 install numpy  
+sudo pip3 install scipy  # 如果安装太慢，使用 sudo apt-get python3-scipy
 
 
 2.tensorflow:
