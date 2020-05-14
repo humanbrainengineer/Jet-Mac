@@ -23,13 +23,25 @@ if __name__ == '__main__':
 
 
 1.
+sudo apt-get install build-essential cmake  pkg-config
+sudo apt-get install libprotobuf-dev libleveldb-dev libsnappy-dev  protobuf-compiler
+sudo apt-get install libhdf5-serial-dev hdf5-tools zlib1g-dev  libjpeg9-dev libhdf5-dev
+sudo apt-get install libgflags-dev libgoogle-glog-dev
+sudo add-apt-repository universe
+sudo add-apt-repository main
+sudo apt-get update
+sudo apt-get install gfortran libopenblas-dev liblapack-dev libatlas-base-dev 
+ 
+
+
 
 pip3 install testresources
-
-sudo apt-get install libhdf5-serial-dev hdf5-tools libhdf5-dev zlib1g-dev zip libjpeg8-dev
 sudo pip3 install numpy grpcio absl-py py-cpuinfo psutil portpicker six mock requests gast
 sudo pip3 install h5py 
 sudo pip3 install astor termcolor protobuf keras-applications keras-preprocessing wrapt google-pasta
+
+sudo apt-get install zip libjpeg8-dev
+
 
 
 
