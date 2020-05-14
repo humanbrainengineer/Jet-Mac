@@ -61,6 +61,8 @@ print(torch.__version__)
 
 
 5.  Install the keras：
+
+sudo apt-get install python3-scipy
 sudo pip3 install keras
 
 
