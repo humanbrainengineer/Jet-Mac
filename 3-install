@@ -64,8 +64,12 @@ sudo pip3 install numpy grpcio absl-py py-cpuinfo psutil portpicker six mock req
  sudo apt-get install python3-pip
  pip3 install -U pip
  sudo apt-get install zlib1g-dev zip libjpeg8-dev libhdf5-dev 
- sudo python3 -m pip install -U numpy grpcio absl-py py-cpuinfo psutil portpicker grpcio six mock requests gast h5py astor termcolor
+ will fail: sudo python3 -m pip install -U numpy grpcio absl-py py-cpuinfo psutil portpicker grpcio six mock requests gast h5py astor termcolor
 
+
+#***
+ sudo apt update && apt install -y python3-h5py
+ #***
 
 
 sudo pip3 install keras-applications keras-preprocessing wrapt google-pasta
