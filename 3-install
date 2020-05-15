@@ -53,13 +53,13 @@ sudo apt-get install libjpeg-dev
 sudo apt install liblapack-dev
 sudo apt install libblas-dev
 sudo apt install gfortran
-
+sudo apt install protobuf
 
 sudo pip3 install testresources
 sudo pip3 install numpy grpcio absl-py py-cpuinfo psutil portpicker six mock requests gast
 
 sudo pip3 install h5py 
-sudo pip3 install astor termcolor protobuf keras-applications keras-preprocessing wrapt google-pasta
+sudo pip3 install astor termcolor keras-applications keras-preprocessing wrapt google-pasta
 
 sudo apt-get install zip libjpeg8-dev
 
