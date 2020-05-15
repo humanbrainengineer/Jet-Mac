@@ -1,0 +1,711 @@
+jet@jet-desktop:/usr/src/cudnn_samples_v7/mnistCUDNN$ sudo pip3 install scikit-image
+WARNING: The directory '/home/jet/.cache/pip' or its parent directory is not owned or is not writable by the current user. The cache has been disabled. Check the permissions and owner of that directory. If executing pip with sudo, you may want sudo's -H flag.
+Collecting scikit-image
+  Downloading scikit-image-0.17.2.tar.gz (29.8 MB)
+     |████████████████████████████████| 29.8 MB 1.6 MB/s 
+Collecting PyWavelets>=1.1.1
+  Downloading PyWavelets-1.1.1.tar.gz (4.6 MB)
+     |████████████████████████████████| 4.6 MB 3.5 MB/s 
+Collecting imageio>=2.3.0
+  Downloading imageio-2.8.0-py3-none-any.whl (3.3 MB)
+     |████████████████████████████████| 3.3 MB 4.3 MB/s 
+Requirement already satisfied: matplotlib!=3.0.0,>=2.0.0 in /usr/lib/python3/dist-packages (from scikit-image) (2.1.1)
+Collecting networkx>=2.0
+  Downloading networkx-2.4-py3-none-any.whl (1.6 MB)
+     |████████████████████████████████| 1.6 MB 4.2 MB/s 
+Requirement already satisfied: numpy>=1.15.1 in /usr/local/lib/python3.6/dist-packages (from scikit-image) (1.18.4)
+Requirement already satisfied: pillow!=7.1.0,!=7.1.1,>=4.3.0 in /usr/lib/python3/dist-packages (from scikit-image) (5.1.0)
+Requirement already satisfied: scipy>=1.0.1 in /usr/local/lib/python3.6/dist-packages (from scikit-image) (1.4.1)
+Collecting tifffile>=2019.7.26
+  Downloading tifffile-2020.5.11-py3-none-any.whl (132 kB)
+     |████████████████████████████████| 132 kB 4.0 MB/s 
+Collecting decorator>=4.3.0
+  Downloading decorator-4.4.2-py2.py3-none-any.whl (9.2 kB)
+Collecting imagecodecs>=2020.2.18
+  Downloading imagecodecs-2020.2.18.tar.gz (8.8 MB)
+     |████████████████████████████████| 8.8 MB 2.8 MB/s 
+Building wheels for collected packages: scikit-image, PyWavelets, imagecodecs
+  Building wheel for scikit-image (setup.py) ... done
+  Created wheel for scikit-image: filename=scikit_image-0.17.2-cp36-cp36m-linux_aarch64.whl size=24840165 sha256=064fa678a85f4f15ebea9a6525ef2e34cdcd8fce27e599ffcd9debcef60f3b33
+  Stored in directory: /tmp/pip-ephem-wheel-cache-rh3uiq0v/wheels/95/df/81/38e2d698d8c3605baff734ff6a1fe1c277e920f5fd0bd0b29d
+  Building wheel for PyWavelets (setup.py) ... done
+  Created wheel for PyWavelets: filename=PyWavelets-1.1.1-cp36-cp36m-linux_aarch64.whl size=5714778 sha256=e033f87ca6d0efe7893493aa39ba8eff7acfdaad05eae97bf005802c95e021c8
+  Stored in directory: /tmp/pip-ephem-wheel-cache-rh3uiq0v/wheels/77/30/86/528105a88c8ae72ca512f1b1ea8dc4ccaab8ea4b38513e1c52
+  Building wheel for imagecodecs (setup.py) ... error
+  ERROR: Command errored out with exit status 1:
+   command: /usr/bin/python3 -u -c 'import sys, setuptools, tokenize; sys.argv[0] = '"'"'/tmp/pip-install-uf6adwmi/imagecodecs/setup.py'"'"'; __file__='"'"'/tmp/pip-install-uf6adwmi/imagecodecs/setup.py'"'"';f=getattr(tokenize, '"'"'open'"'"', open)(__file__);code=f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' bdist_wheel -d /tmp/pip-wheel-8zu2hfts
+       cwd: /tmp/pip-install-uf6adwmi/imagecodecs/
+  Complete output (328 lines):
+  running bdist_wheel
+  running build
+  running build_py
+  creating build
+  creating build/lib.linux-aarch64-3.6
+  creating build/lib.linux-aarch64-3.6/imagecodecs
+  copying imagecodecs/imagecodecs.py -> build/lib.linux-aarch64-3.6/imagecodecs
+  copying imagecodecs/__main__.py -> build/lib.linux-aarch64-3.6/imagecodecs
+  copying imagecodecs/_imagecodecs.py -> build/lib.linux-aarch64-3.6/imagecodecs
+  copying imagecodecs/__init__.py -> build/lib.linux-aarch64-3.6/imagecodecs
+  creating build/lib.linux-aarch64-3.6/imagecodecs/licenses
+  copying imagecodecs/licenses/LICENSE-libjpeg-turbo -> build/lib.linux-aarch64-3.6/imagecodecs/licenses
+  copying imagecodecs/licenses/LICENSE-lcms2 -> build/lib.linux-aarch64-3.6/imagecodecs/licenses
+  copying imagecodecs/licenses/LICENSE-liblzma -> build/lib.linux-aarch64-3.6/imagecodecs/licenses
+  copying imagecodecs/licenses/LICENSE-snappy -> build/lib.linux-aarch64-3.6/imagecodecs/licenses
+  copying imagecodecs/licenses/LICENSE-charls -> build/lib.linux-aarch64-3.6/imagecodecs/licenses
+  copying imagecodecs/licenses/LICENSE-bitshuffle -> build/lib.linux-aarch64-3.6/imagecodecs/licenses
+  copying imagecodecs/licenses/LICENSE-brotli -> build/lib.linux-aarch64-3.6/imagecodecs/licenses
+  copying imagecodecs/licenses/LICENSE-brunsli -> build/lib.linux-aarch64-3.6/imagecodecs/licenses
+  copying imagecodecs/licenses/LICENSE-libpng -> build/lib.linux-aarch64-3.6/imagecodecs/licenses
+  copying imagecodecs/licenses/LICENSE-jpg_0xc3 -> build/lib.linux-aarch64-3.6/imagecodecs/licenses
+  copying imagecodecs/licenses/LICENSE-zopfli -> build/lib.linux-aarch64-3.6/imagecodecs/licenses
+  copying imagecodecs/licenses/LICENSE-jpeg -> build/lib.linux-aarch64-3.6/imagecodecs/licenses
+  copying imagecodecs/licenses/LICENSE-bzip2 -> build/lib.linux-aarch64-3.6/imagecodecs/licenses
+  copying imagecodecs/licenses/LICENSE-zstd -> build/lib.linux-aarch64-3.6/imagecodecs/licenses
+  copying imagecodecs/licenses/LICENSE-libaec -> build/lib.linux-aarch64-3.6/imagecodecs/licenses
+  copying imagecodecs/licenses/LICENSE-blosc -> build/lib.linux-aarch64-3.6/imagecodecs/licenses
+  copying imagecodecs/licenses/LICENSE-jxrlib -> build/lib.linux-aarch64-3.6/imagecodecs/licenses
+  copying imagecodecs/licenses/LICENSE-fastlz -> build/lib.linux-aarch64-3.6/imagecodecs/licenses
+  copying imagecodecs/licenses/LICENSE-zfp -> build/lib.linux-aarch64-3.6/imagecodecs/licenses
+  copying imagecodecs/licenses/LICENSE-libwebp -> build/lib.linux-aarch64-3.6/imagecodecs/licenses
+  copying imagecodecs/licenses/LICENSE-giflib -> build/lib.linux-aarch64-3.6/imagecodecs/licenses
+  copying imagecodecs/licenses/LICENSE-lz4 -> build/lib.linux-aarch64-3.6/imagecodecs/licenses
+  copying imagecodecs/licenses/LICENSE-lzf -> build/lib.linux-aarch64-3.6/imagecodecs/licenses
+  copying imagecodecs/licenses/LICENSE-zlib -> build/lib.linux-aarch64-3.6/imagecodecs/licenses
+  copying imagecodecs/licenses/LICENSE-libtiff -> build/lib.linux-aarch64-3.6/imagecodecs/licenses
+  copying imagecodecs/licenses/LICENSE-libmng -> build/lib.linux-aarch64-3.6/imagecodecs/licenses
+  copying imagecodecs/licenses/LICENSE-openjpeg -> build/lib.linux-aarch64-3.6/imagecodecs/licenses
+  running build_ext
+  skipping 'imagecodecs/_aec.c' Cython extension (up-to-date)
+  skipping 'imagecodecs/_bitshuffle.c' Cython extension (up-to-date)
+  skipping 'imagecodecs/_blosc.c' Cython extension (up-to-date)
+  skipping 'imagecodecs/_brotli.c' Cython extension (up-to-date)
+  skipping 'imagecodecs/_bz2.c' Cython extension (up-to-date)
+  skipping 'imagecodecs/_gif.c' Cython extension (up-to-date)
+  skipping 'imagecodecs/_imcd.c' Cython extension (up-to-date)
+  skipping 'imagecodecs/_jpeg2k.c' Cython extension (up-to-date)
+  skipping 'imagecodecs/_jpeg8.c' Cython extension (up-to-date)
+  skipping 'imagecodecs/_jpegsof3.c' Cython extension (up-to-date)
+  skipping 'imagecodecs/_jpegxr.c' Cython extension (up-to-date)
+  skipping 'imagecodecs/_lz4.c' Cython extension (up-to-date)
+  skipping 'imagecodecs/_lzf.c' Cython extension (up-to-date)
+  skipping 'imagecodecs/_lzma.c' Cython extension (up-to-date)
+  skipping 'imagecodecs/_png.c' Cython extension (up-to-date)
+  skipping 'imagecodecs/_shared.c' Cython extension (up-to-date)
+  skipping 'imagecodecs/_snappy.c' Cython extension (up-to-date)
+  skipping 'imagecodecs/_tiff.c' Cython extension (up-to-date)
+  skipping 'imagecodecs/_webp.c' Cython extension (up-to-date)
+  skipping 'imagecodecs/_zlib.c' Cython extension (up-to-date)
+  skipping 'imagecodecs/_zopfli.c' Cython extension (up-to-date)
+  skipping 'imagecodecs/_zstd.c' Cython extension (up-to-date)
+  building 'imagecodecs._aec' extension
+  creating build/temp.linux-aarch64-3.6
+  creating build/temp.linux-aarch64-3.6/imagecodecs
+  aarch64-linux-gnu-gcc -pthread -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -Iimagecodecs -I/usr/include/python3.6m -I/usr/local/lib/python3.6/dist-packages/numpy/core/include -c imagecodecs/_aec.c -o build/temp.linux-aarch64-3.6/imagecodecs/_aec.o
+  In file included from /usr/include/python3.6m/numpy/ndarraytypes.h:1809:0,
+                   from /usr/include/python3.6m/numpy/ndarrayobject.h:18,
+                   from /usr/include/python3.6m/numpy/arrayobject.h:4,
+                   from imagecodecs/_aec.c:598:
+  /usr/include/python3.6m/numpy/npy_1_7_deprecated_api.h:15:2: warning: #warning "Using deprecated NumPy API, disable it by " "#defining NPY_NO_DEPRECATED_API NPY_1_7_API_VERSION" [-Wcpp]
+   #warning "Using deprecated NumPy API, disable it by " \
+    ^~~~~~~
+  aarch64-linux-gnu-gcc -pthread -shared -Wl,-O1 -Wl,-Bsymbolic-functions -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-Bsymbolic-functions -Wl,-z,relro -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 build/temp.linux-aarch64-3.6/imagecodecs/_aec.o -lm -laec -o build/lib.linux-aarch64-3.6/imagecodecs/_aec.cpython-36m-aarch64-linux-gnu.so
+  building 'imagecodecs._bitshuffle' extension
+  creating build/temp.linux-aarch64-3.6/bitshuffle-0.3.5
+  aarch64-linux-gnu-gcc -pthread -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -Iimagecodecs -Ibitshuffle-0.3.5 -I/usr/include/python3.6m -I/usr/local/lib/python3.6/dist-packages/numpy/core/include -c imagecodecs/_bitshuffle.c -o build/temp.linux-aarch64-3.6/imagecodecs/_bitshuffle.o
+  In file included from /usr/include/python3.6m/numpy/ndarraytypes.h:1809:0,
+                   from /usr/include/python3.6m/numpy/ndarrayobject.h:18,
+                   from /usr/include/python3.6m/numpy/arrayobject.h:4,
+                   from imagecodecs/_bitshuffle.c:598:
+  /usr/include/python3.6m/numpy/npy_1_7_deprecated_api.h:15:2: warning: #warning "Using deprecated NumPy API, disable it by " "#defining NPY_NO_DEPRECATED_API NPY_1_7_API_VERSION" [-Wcpp]
+   #warning "Using deprecated NumPy API, disable it by " \
+    ^~~~~~~
+  aarch64-linux-gnu-gcc -pthread -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -Iimagecodecs -Ibitshuffle-0.3.5 -I/usr/include/python3.6m -I/usr/local/lib/python3.6/dist-packages/numpy/core/include -c bitshuffle-0.3.5/bitshuffle_core.c -o build/temp.linux-aarch64-3.6/bitshuffle-0.3.5/bitshuffle_core.o
+  bitshuffle-0.3.5/bitshuffle_core.c: In function ‘bshuf_trans_byte_elem_NEON_16’:
+  bitshuffle-0.3.5/bitshuffle_core.c:391:23: warning: pointer targets in passing argument 1 of ‘vld1q_s8’ differ in signedness [-Wpointer-sign]
+           a0 = vld1q_s8(in_b + 2*ii + 0*16);
+                         ^~~~
+  In file included from bitshuffle-0.3.5/bitshuffle_core.c:37:0:
+  /usr/lib/gcc/aarch64-linux-gnu/7/include/arm_neon.h:17197:1: note: expected ‘const int8_t * {aka const signed char *}’ but argument is of type ‘const char *’
+   vld1q_s8 (const int8_t *a)
+   ^~~~~~~~
+  bitshuffle-0.3.5/bitshuffle_core.c:392:23: warning: pointer targets in passing argument 1 of ‘vld1q_s8’ differ in signedness [-Wpointer-sign]
+           b0 = vld1q_s8(in_b + 2*ii + 1*16);
+                         ^~~~
+  In file included from bitshuffle-0.3.5/bitshuffle_core.c:37:0:
+  /usr/lib/gcc/aarch64-linux-gnu/7/include/arm_neon.h:17197:1: note: expected ‘const int8_t * {aka const signed char *}’ but argument is of type ‘const char *’
+   vld1q_s8 (const int8_t *a)
+   ^~~~~~~~
+  bitshuffle-0.3.5/bitshuffle_core.c:406:18: warning: pointer targets in passing argument 1 of ‘vst1q_s8’ differ in signedness [-Wpointer-sign]
+           vst1q_s8(out_b + 0*size + ii, a0);
+                    ^~~~~
+  In file included from bitshuffle-0.3.5/bitshuffle_core.c:37:0:
+  /usr/lib/gcc/aarch64-linux-gnu/7/include/arm_neon.h:26906:1: note: expected ‘int8_t * {aka signed char *}’ but argument is of type ‘char *’
+   vst1q_s8 (int8_t *a, int8x16_t b)
+   ^~~~~~~~
+  bitshuffle-0.3.5/bitshuffle_core.c:407:18: warning: pointer targets in passing argument 1 of ‘vst1q_s8’ differ in signedness [-Wpointer-sign]
+           vst1q_s8(out_b + 1*size + ii, b0);
+                    ^~~~~
+  In file included from bitshuffle-0.3.5/bitshuffle_core.c:37:0:
+  /usr/lib/gcc/aarch64-linux-gnu/7/include/arm_neon.h:26906:1: note: expected ‘int8_t * {aka signed char *}’ but argument is of type ‘char *’
+   vst1q_s8 (int8_t *a, int8x16_t b)
+   ^~~~~~~~
+  bitshuffle-0.3.5/bitshuffle_core.c: In function ‘bshuf_trans_byte_elem_NEON_32’:
+  bitshuffle-0.3.5/bitshuffle_core.c:427:23: warning: pointer targets in passing argument 1 of ‘vld1q_s8’ differ in signedness [-Wpointer-sign]
+           a0 = vld1q_s8(in_b + 4*ii + 0*16);
+                         ^~~~
+  In file included from bitshuffle-0.3.5/bitshuffle_core.c:37:0:
+  /usr/lib/gcc/aarch64-linux-gnu/7/include/arm_neon.h:17197:1: note: expected ‘const int8_t * {aka const signed char *}’ but argument is of type ‘const char *’
+   vld1q_s8 (const int8_t *a)
+   ^~~~~~~~
+  bitshuffle-0.3.5/bitshuffle_core.c:428:23: warning: pointer targets in passing argument 1 of ‘vld1q_s8’ differ in signedness [-Wpointer-sign]
+           b0 = vld1q_s8(in_b + 4*ii + 1*16);
+                         ^~~~
+  In file included from bitshuffle-0.3.5/bitshuffle_core.c:37:0:
+  /usr/lib/gcc/aarch64-linux-gnu/7/include/arm_neon.h:17197:1: note: expected ‘const int8_t * {aka const signed char *}’ but argument is of type ‘const char *’
+   vld1q_s8 (const int8_t *a)
+   ^~~~~~~~
+  bitshuffle-0.3.5/bitshuffle_core.c:429:23: warning: pointer targets in passing argument 1 of ‘vld1q_s8’ differ in signedness [-Wpointer-sign]
+           c0 = vld1q_s8(in_b + 4*ii + 2*16);
+                         ^~~~
+  In file included from bitshuffle-0.3.5/bitshuffle_core.c:37:0:
+  /usr/lib/gcc/aarch64-linux-gnu/7/include/arm_neon.h:17197:1: note: expected ‘const int8_t * {aka const signed char *}’ but argument is of type ‘const char *’
+   vld1q_s8 (const int8_t *a)
+   ^~~~~~~~
+  bitshuffle-0.3.5/bitshuffle_core.c:430:23: warning: pointer targets in passing argument 1 of ‘vld1q_s8’ differ in signedness [-Wpointer-sign]
+           d0 = vld1q_s8(in_b + 4*ii + 3*16);
+                         ^~~~
+  In file included from bitshuffle-0.3.5/bitshuffle_core.c:37:0:
+  /usr/lib/gcc/aarch64-linux-gnu/7/include/arm_neon.h:17197:1: note: expected ‘const int8_t * {aka const signed char *}’ but argument is of type ‘const char *’
+   vld1q_s8 (const int8_t *a)
+   ^~~~~~~~
+  bitshuffle-0.3.5/bitshuffle_core.c: In function ‘bshuf_trans_byte_elem_NEON_64’:
+  bitshuffle-0.3.5/bitshuffle_core.c:473:23: warning: pointer targets in passing argument 1 of ‘vld1q_s8’ differ in signedness [-Wpointer-sign]
+           a0 = vld1q_s8(in_b + 8*ii + 0*16);
+                         ^~~~
+  In file included from bitshuffle-0.3.5/bitshuffle_core.c:37:0:
+  /usr/lib/gcc/aarch64-linux-gnu/7/include/arm_neon.h:17197:1: note: expected ‘const int8_t * {aka const signed char *}’ but argument is of type ‘const char *’
+   vld1q_s8 (const int8_t *a)
+   ^~~~~~~~
+  bitshuffle-0.3.5/bitshuffle_core.c:474:23: warning: pointer targets in passing argument 1 of ‘vld1q_s8’ differ in signedness [-Wpointer-sign]
+           b0 = vld1q_s8(in_b + 8*ii + 1*16);
+                         ^~~~
+  In file included from bitshuffle-0.3.5/bitshuffle_core.c:37:0:
+  /usr/lib/gcc/aarch64-linux-gnu/7/include/arm_neon.h:17197:1: note: expected ‘const int8_t * {aka const signed char *}’ but argument is of type ‘const char *’
+   vld1q_s8 (const int8_t *a)
+   ^~~~~~~~
+  bitshuffle-0.3.5/bitshuffle_core.c:475:23: warning: pointer targets in passing argument 1 of ‘vld1q_s8’ differ in signedness [-Wpointer-sign]
+           c0 = vld1q_s8(in_b + 8*ii + 2*16);
+                         ^~~~
+  In file included from bitshuffle-0.3.5/bitshuffle_core.c:37:0:
+  /usr/lib/gcc/aarch64-linux-gnu/7/include/arm_neon.h:17197:1: note: expected ‘const int8_t * {aka const signed char *}’ but argument is of type ‘const char *’
+   vld1q_s8 (const int8_t *a)
+   ^~~~~~~~
+  bitshuffle-0.3.5/bitshuffle_core.c:476:23: warning: pointer targets in passing argument 1 of ‘vld1q_s8’ differ in signedness [-Wpointer-sign]
+           d0 = vld1q_s8(in_b + 8*ii + 3*16);
+                         ^~~~
+  In file included from bitshuffle-0.3.5/bitshuffle_core.c:37:0:
+  /usr/lib/gcc/aarch64-linux-gnu/7/include/arm_neon.h:17197:1: note: expected ‘const int8_t * {aka const signed char *}’ but argument is of type ‘const char *’
+   vld1q_s8 (const int8_t *a)
+   ^~~~~~~~
+  bitshuffle-0.3.5/bitshuffle_core.c:477:23: warning: pointer targets in passing argument 1 of ‘vld1q_s8’ differ in signedness [-Wpointer-sign]
+           e0 = vld1q_s8(in_b + 8*ii + 4*16);
+                         ^~~~
+  In file included from bitshuffle-0.3.5/bitshuffle_core.c:37:0:
+  /usr/lib/gcc/aarch64-linux-gnu/7/include/arm_neon.h:17197:1: note: expected ‘const int8_t * {aka const signed char *}’ but argument is of type ‘const char *’
+   vld1q_s8 (const int8_t *a)
+   ^~~~~~~~
+  bitshuffle-0.3.5/bitshuffle_core.c:478:23: warning: pointer targets in passing argument 1 of ‘vld1q_s8’ differ in signedness [-Wpointer-sign]
+           f0 = vld1q_s8(in_b + 8*ii + 5*16);
+                         ^~~~
+  In file included from bitshuffle-0.3.5/bitshuffle_core.c:37:0:
+  /usr/lib/gcc/aarch64-linux-gnu/7/include/arm_neon.h:17197:1: note: expected ‘const int8_t * {aka const signed char *}’ but argument is of type ‘const char *’
+   vld1q_s8 (const int8_t *a)
+   ^~~~~~~~
+  bitshuffle-0.3.5/bitshuffle_core.c:479:23: warning: pointer targets in passing argument 1 of ‘vld1q_s8’ differ in signedness [-Wpointer-sign]
+           g0 = vld1q_s8(in_b + 8*ii + 6*16);
+                         ^~~~
+  In file included from bitshuffle-0.3.5/bitshuffle_core.c:37:0:
+  /usr/lib/gcc/aarch64-linux-gnu/7/include/arm_neon.h:17197:1: note: expected ‘const int8_t * {aka const signed char *}’ but argument is of type ‘const char *’
+   vld1q_s8 (const int8_t *a)
+   ^~~~~~~~
+  bitshuffle-0.3.5/bitshuffle_core.c:480:23: warning: pointer targets in passing argument 1 of ‘vld1q_s8’ differ in signedness [-Wpointer-sign]
+           h0 = vld1q_s8(in_b + 8*ii + 7*16);
+                         ^~~~
+  In file included from bitshuffle-0.3.5/bitshuffle_core.c:37:0:
+  /usr/lib/gcc/aarch64-linux-gnu/7/include/arm_neon.h:17197:1: note: expected ‘const int8_t * {aka const signed char *}’ but argument is of type ‘const char *’
+   vld1q_s8 (const int8_t *a)
+   ^~~~~~~~
+  bitshuffle-0.3.5/bitshuffle_core.c:518:18: warning: pointer targets in passing argument 1 of ‘vst1q_s8’ differ in signedness [-Wpointer-sign]
+           vst1q_s8(out_b + 0*size + ii, a0);
+                    ^~~~~
+  In file included from bitshuffle-0.3.5/bitshuffle_core.c:37:0:
+  /usr/lib/gcc/aarch64-linux-gnu/7/include/arm_neon.h:26906:1: note: expected ‘int8_t * {aka signed char *}’ but argument is of type ‘char *’
+   vst1q_s8 (int8_t *a, int8x16_t b)
+   ^~~~~~~~
+  bitshuffle-0.3.5/bitshuffle_core.c:519:18: warning: pointer targets in passing argument 1 of ‘vst1q_s8’ differ in signedness [-Wpointer-sign]
+           vst1q_s8(out_b + 1*size + ii, b0);
+                    ^~~~~
+  In file included from bitshuffle-0.3.5/bitshuffle_core.c:37:0:
+  /usr/lib/gcc/aarch64-linux-gnu/7/include/arm_neon.h:26906:1: note: expected ‘int8_t * {aka signed char *}’ but argument is of type ‘char *’
+   vst1q_s8 (int8_t *a, int8x16_t b)
+   ^~~~~~~~
+  bitshuffle-0.3.5/bitshuffle_core.c:520:18: warning: pointer targets in passing argument 1 of ‘vst1q_s8’ differ in signedness [-Wpointer-sign]
+           vst1q_s8(out_b + 2*size + ii, c0);
+                    ^~~~~
+  In file included from bitshuffle-0.3.5/bitshuffle_core.c:37:0:
+  /usr/lib/gcc/aarch64-linux-gnu/7/include/arm_neon.h:26906:1: note: expected ‘int8_t * {aka signed char *}’ but argument is of type ‘char *’
+   vst1q_s8 (int8_t *a, int8x16_t b)
+   ^~~~~~~~
+  bitshuffle-0.3.5/bitshuffle_core.c:521:18: warning: pointer targets in passing argument 1 of ‘vst1q_s8’ differ in signedness [-Wpointer-sign]
+           vst1q_s8(out_b + 3*size + ii, d0);
+                    ^~~~~
+  In file included from bitshuffle-0.3.5/bitshuffle_core.c:37:0:
+  /usr/lib/gcc/aarch64-linux-gnu/7/include/arm_neon.h:26906:1: note: expected ‘int8_t * {aka signed char *}’ but argument is of type ‘char *’
+   vst1q_s8 (int8_t *a, int8x16_t b)
+   ^~~~~~~~
+  bitshuffle-0.3.5/bitshuffle_core.c:522:18: warning: pointer targets in passing argument 1 of ‘vst1q_s8’ differ in signedness [-Wpointer-sign]
+           vst1q_s8(out_b + 4*size + ii, e0);
+                    ^~~~~
+  In file included from bitshuffle-0.3.5/bitshuffle_core.c:37:0:
+  /usr/lib/gcc/aarch64-linux-gnu/7/include/arm_neon.h:26906:1: note: expected ‘int8_t * {aka signed char *}’ but argument is of type ‘char *’
+   vst1q_s8 (int8_t *a, int8x16_t b)
+   ^~~~~~~~
+  bitshuffle-0.3.5/bitshuffle_core.c:523:18: warning: pointer targets in passing argument 1 of ‘vst1q_s8’ differ in signedness [-Wpointer-sign]
+           vst1q_s8(out_b + 5*size + ii, f0);
+                    ^~~~~
+  In file included from bitshuffle-0.3.5/bitshuffle_core.c:37:0:
+  /usr/lib/gcc/aarch64-linux-gnu/7/include/arm_neon.h:26906:1: note: expected ‘int8_t * {aka signed char *}’ but argument is of type ‘char *’
+   vst1q_s8 (int8_t *a, int8x16_t b)
+   ^~~~~~~~
+  bitshuffle-0.3.5/bitshuffle_core.c:524:18: warning: pointer targets in passing argument 1 of ‘vst1q_s8’ differ in signedness [-Wpointer-sign]
+           vst1q_s8(out_b + 6*size + ii, g0);
+                    ^~~~~
+  In file included from bitshuffle-0.3.5/bitshuffle_core.c:37:0:
+  /usr/lib/gcc/aarch64-linux-gnu/7/include/arm_neon.h:26906:1: note: expected ‘int8_t * {aka signed char *}’ but argument is of type ‘char *’
+   vst1q_s8 (int8_t *a, int8x16_t b)
+   ^~~~~~~~
+  bitshuffle-0.3.5/bitshuffle_core.c:525:18: warning: pointer targets in passing argument 1 of ‘vst1q_s8’ differ in signedness [-Wpointer-sign]
+           vst1q_s8(out_b + 7*size + ii, h0);
+                    ^~~~~
+  In file included from bitshuffle-0.3.5/bitshuffle_core.c:37:0:
+  /usr/lib/gcc/aarch64-linux-gnu/7/include/arm_neon.h:26906:1: note: expected ‘int8_t * {aka signed char *}’ but argument is of type ‘char *’
+   vst1q_s8 (int8_t *a, int8x16_t b)
+   ^~~~~~~~
+  bitshuffle-0.3.5/bitshuffle_core.c: In function ‘bshuf_trans_byte_bitrow_NEON’:
+  bitshuffle-0.3.5/bitshuffle_core.c:683:27: warning: pointer targets in passing argument 1 of ‘vld1q_s8’ differ in signedness [-Wpointer-sign]
+               a0 = vld1q_s8(in_b + (ii + 0)*nbyte_row + jj);
+                             ^~~~
+  In file included from bitshuffle-0.3.5/bitshuffle_core.c:37:0:
+  /usr/lib/gcc/aarch64-linux-gnu/7/include/arm_neon.h:17197:1: note: expected ‘const int8_t * {aka const signed char *}’ but argument is of type ‘const char *’
+   vld1q_s8 (const int8_t *a)
+   ^~~~~~~~
+  bitshuffle-0.3.5/bitshuffle_core.c:684:27: warning: pointer targets in passing argument 1 of ‘vld1q_s8’ differ in signedness [-Wpointer-sign]
+               b0 = vld1q_s8(in_b + (ii + 1)*nbyte_row + jj);
+                             ^~~~
+  In file included from bitshuffle-0.3.5/bitshuffle_core.c:37:0:
+  /usr/lib/gcc/aarch64-linux-gnu/7/include/arm_neon.h:17197:1: note: expected ‘const int8_t * {aka const signed char *}’ but argument is of type ‘const char *’
+   vld1q_s8 (const int8_t *a)
+   ^~~~~~~~
+  bitshuffle-0.3.5/bitshuffle_core.c:685:27: warning: pointer targets in passing argument 1 of ‘vld1q_s8’ differ in signedness [-Wpointer-sign]
+               c0 = vld1q_s8(in_b + (ii + 2)*nbyte_row + jj);
+                             ^~~~
+  In file included from bitshuffle-0.3.5/bitshuffle_core.c:37:0:
+  /usr/lib/gcc/aarch64-linux-gnu/7/include/arm_neon.h:17197:1: note: expected ‘const int8_t * {aka const signed char *}’ but argument is of type ‘const char *’
+   vld1q_s8 (const int8_t *a)
+   ^~~~~~~~
+  bitshuffle-0.3.5/bitshuffle_core.c:686:27: warning: pointer targets in passing argument 1 of ‘vld1q_s8’ differ in signedness [-Wpointer-sign]
+               d0 = vld1q_s8(in_b + (ii + 3)*nbyte_row + jj);
+                             ^~~~
+  In file included from bitshuffle-0.3.5/bitshuffle_core.c:37:0:
+  /usr/lib/gcc/aarch64-linux-gnu/7/include/arm_neon.h:17197:1: note: expected ‘const int8_t * {aka const signed char *}’ but argument is of type ‘const char *’
+   vld1q_s8 (const int8_t *a)
+   ^~~~~~~~
+  bitshuffle-0.3.5/bitshuffle_core.c:687:27: warning: pointer targets in passing argument 1 of ‘vld1q_s8’ differ in signedness [-Wpointer-sign]
+               e0 = vld1q_s8(in_b + (ii + 4)*nbyte_row + jj);
+                             ^~~~
+  In file included from bitshuffle-0.3.5/bitshuffle_core.c:37:0:
+  /usr/lib/gcc/aarch64-linux-gnu/7/include/arm_neon.h:17197:1: note: expected ‘const int8_t * {aka const signed char *}’ but argument is of type ‘const char *’
+   vld1q_s8 (const int8_t *a)
+   ^~~~~~~~
+  bitshuffle-0.3.5/bitshuffle_core.c:688:27: warning: pointer targets in passing argument 1 of ‘vld1q_s8’ differ in signedness [-Wpointer-sign]
+               f0 = vld1q_s8(in_b + (ii + 5)*nbyte_row + jj);
+                             ^~~~
+  In file included from bitshuffle-0.3.5/bitshuffle_core.c:37:0:
+  /usr/lib/gcc/aarch64-linux-gnu/7/include/arm_neon.h:17197:1: note: expected ‘const int8_t * {aka const signed char *}’ but argument is of type ‘const char *’
+   vld1q_s8 (const int8_t *a)
+   ^~~~~~~~
+  bitshuffle-0.3.5/bitshuffle_core.c:689:27: warning: pointer targets in passing argument 1 of ‘vld1q_s8’ differ in signedness [-Wpointer-sign]
+               g0 = vld1q_s8(in_b + (ii + 6)*nbyte_row + jj);
+                             ^~~~
+  In file included from bitshuffle-0.3.5/bitshuffle_core.c:37:0:
+  /usr/lib/gcc/aarch64-linux-gnu/7/include/arm_neon.h:17197:1: note: expected ‘const int8_t * {aka const signed char *}’ but argument is of type ‘const char *’
+   vld1q_s8 (const int8_t *a)
+   ^~~~~~~~
+  bitshuffle-0.3.5/bitshuffle_core.c:690:27: warning: pointer targets in passing argument 1 of ‘vld1q_s8’ differ in signedness [-Wpointer-sign]
+               h0 = vld1q_s8(in_b + (ii + 7)*nbyte_row + jj);
+                             ^~~~
+  In file included from bitshuffle-0.3.5/bitshuffle_core.c:37:0:
+  /usr/lib/gcc/aarch64-linux-gnu/7/include/arm_neon.h:17197:1: note: expected ‘const int8_t * {aka const signed char *}’ but argument is of type ‘const char *’
+   vld1q_s8 (const int8_t *a)
+   ^~~~~~~~
+  aarch64-linux-gnu-gcc -pthread -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -Iimagecodecs -Ibitshuffle-0.3.5 -I/usr/include/python3.6m -I/usr/local/lib/python3.6/dist-packages/numpy/core/include -c bitshuffle-0.3.5/iochain.c -o build/temp.linux-aarch64-3.6/bitshuffle-0.3.5/iochain.o
+  aarch64-linux-gnu-gcc -pthread -shared -Wl,-O1 -Wl,-Bsymbolic-functions -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-Bsymbolic-functions -Wl,-z,relro -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 build/temp.linux-aarch64-3.6/imagecodecs/_bitshuffle.o build/temp.linux-aarch64-3.6/bitshuffle-0.3.5/bitshuffle_core.o build/temp.linux-aarch64-3.6/bitshuffle-0.3.5/iochain.o -lm -o build/lib.linux-aarch64-3.6/imagecodecs/_bitshuffle.cpython-36m-aarch64-linux-gnu.so
+  building 'imagecodecs._blosc' extension
+  aarch64-linux-gnu-gcc -pthread -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -Iimagecodecs -I/usr/include/python3.6m -I/usr/local/lib/python3.6/dist-packages/numpy/core/include -c imagecodecs/_blosc.c -o build/temp.linux-aarch64-3.6/imagecodecs/_blosc.o
+  In file included from /usr/include/python3.6m/numpy/ndarraytypes.h:1809:0,
+                   from /usr/include/python3.6m/numpy/ndarrayobject.h:18,
+                   from /usr/include/python3.6m/numpy/arrayobject.h:4,
+                   from imagecodecs/_blosc.c:598:
+  /usr/include/python3.6m/numpy/npy_1_7_deprecated_api.h:15:2: warning: #warning "Using deprecated NumPy API, disable it by " "#defining NPY_NO_DEPRECATED_API NPY_1_7_API_VERSION" [-Wcpp]
+   #warning "Using deprecated NumPy API, disable it by " \
+    ^~~~~~~
+  imagecodecs/_blosc.c:602:10: fatal error: blosc.h: No such file or directory
+   #include "blosc.h"
+            ^~~~~~~~~
+  compilation terminated.
+  error: command 'aarch64-linux-gnu-gcc' failed with exit status 1
+  ----------------------------------------
+  ERROR: Failed building wheel for imagecodecs
+  Running setup.py clean for imagecodecs
+Successfully built scikit-image PyWavelets
+Failed to build imagecodecs
+Installing collected packages: PyWavelets, imageio, decorator, networkx, imagecodecs, tifffile, scikit-image
+  Attempting uninstall: decorator
+    Found existing installation: decorator 4.1.2
+    Uninstalling decorator-4.1.2:
+      Successfully uninstalled decorator-4.1.2
+    Running setup.py install for imagecodecs ... error
+    ERROR: Command errored out with exit status 1:
+     command: /usr/bin/python3 -u -c 'import sys, setuptools, tokenize; sys.argv[0] = '"'"'/tmp/pip-install-uf6adwmi/imagecodecs/setup.py'"'"'; __file__='"'"'/tmp/pip-install-uf6adwmi/imagecodecs/setup.py'"'"';f=getattr(tokenize, '"'"'open'"'"', open)(__file__);code=f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' install --record /tmp/pip-record-ioo5rlfp/install-record.txt --single-version-externally-managed --compile --install-headers /usr/local/include/python3.6/imagecodecs
+         cwd: /tmp/pip-install-uf6adwmi/imagecodecs/
+    Complete output (328 lines):
+    running install
+    running build
+    running build_py
+    creating build
+    creating build/lib.linux-aarch64-3.6
+    creating build/lib.linux-aarch64-3.6/imagecodecs
+    copying imagecodecs/imagecodecs.py -> build/lib.linux-aarch64-3.6/imagecodecs
+    copying imagecodecs/__main__.py -> build/lib.linux-aarch64-3.6/imagecodecs
+    copying imagecodecs/_imagecodecs.py -> build/lib.linux-aarch64-3.6/imagecodecs
+    copying imagecodecs/__init__.py -> build/lib.linux-aarch64-3.6/imagecodecs
+    creating build/lib.linux-aarch64-3.6/imagecodecs/licenses
+    copying imagecodecs/licenses/LICENSE-libjpeg-turbo -> build/lib.linux-aarch64-3.6/imagecodecs/licenses
+    copying imagecodecs/licenses/LICENSE-lcms2 -> build/lib.linux-aarch64-3.6/imagecodecs/licenses
+    copying imagecodecs/licenses/LICENSE-liblzma -> build/lib.linux-aarch64-3.6/imagecodecs/licenses
+    copying imagecodecs/licenses/LICENSE-snappy -> build/lib.linux-aarch64-3.6/imagecodecs/licenses
+    copying imagecodecs/licenses/LICENSE-charls -> build/lib.linux-aarch64-3.6/imagecodecs/licenses
+    copying imagecodecs/licenses/LICENSE-bitshuffle -> build/lib.linux-aarch64-3.6/imagecodecs/licenses
+    copying imagecodecs/licenses/LICENSE-brotli -> build/lib.linux-aarch64-3.6/imagecodecs/licenses
+    copying imagecodecs/licenses/LICENSE-brunsli -> build/lib.linux-aarch64-3.6/imagecodecs/licenses
+    copying imagecodecs/licenses/LICENSE-libpng -> build/lib.linux-aarch64-3.6/imagecodecs/licenses
+    copying imagecodecs/licenses/LICENSE-jpg_0xc3 -> build/lib.linux-aarch64-3.6/imagecodecs/licenses
+    copying imagecodecs/licenses/LICENSE-zopfli -> build/lib.linux-aarch64-3.6/imagecodecs/licenses
+    copying imagecodecs/licenses/LICENSE-jpeg -> build/lib.linux-aarch64-3.6/imagecodecs/licenses
+    copying imagecodecs/licenses/LICENSE-bzip2 -> build/lib.linux-aarch64-3.6/imagecodecs/licenses
+    copying imagecodecs/licenses/LICENSE-zstd -> build/lib.linux-aarch64-3.6/imagecodecs/licenses
+    copying imagecodecs/licenses/LICENSE-libaec -> build/lib.linux-aarch64-3.6/imagecodecs/licenses
+    copying imagecodecs/licenses/LICENSE-blosc -> build/lib.linux-aarch64-3.6/imagecodecs/licenses
+    copying imagecodecs/licenses/LICENSE-jxrlib -> build/lib.linux-aarch64-3.6/imagecodecs/licenses
+    copying imagecodecs/licenses/LICENSE-fastlz -> build/lib.linux-aarch64-3.6/imagecodecs/licenses
+    copying imagecodecs/licenses/LICENSE-zfp -> build/lib.linux-aarch64-3.6/imagecodecs/licenses
+    copying imagecodecs/licenses/LICENSE-libwebp -> build/lib.linux-aarch64-3.6/imagecodecs/licenses
+    copying imagecodecs/licenses/LICENSE-giflib -> build/lib.linux-aarch64-3.6/imagecodecs/licenses
+    copying imagecodecs/licenses/LICENSE-lz4 -> build/lib.linux-aarch64-3.6/imagecodecs/licenses
+    copying imagecodecs/licenses/LICENSE-lzf -> build/lib.linux-aarch64-3.6/imagecodecs/licenses
+    copying imagecodecs/licenses/LICENSE-zlib -> build/lib.linux-aarch64-3.6/imagecodecs/licenses
+    copying imagecodecs/licenses/LICENSE-libtiff -> build/lib.linux-aarch64-3.6/imagecodecs/licenses
+    copying imagecodecs/licenses/LICENSE-libmng -> build/lib.linux-aarch64-3.6/imagecodecs/licenses
+    copying imagecodecs/licenses/LICENSE-openjpeg -> build/lib.linux-aarch64-3.6/imagecodecs/licenses
+    running build_ext
+    skipping 'imagecodecs/_aec.c' Cython extension (up-to-date)
+    skipping 'imagecodecs/_bitshuffle.c' Cython extension (up-to-date)
+    skipping 'imagecodecs/_blosc.c' Cython extension (up-to-date)
+    skipping 'imagecodecs/_brotli.c' Cython extension (up-to-date)
+    skipping 'imagecodecs/_bz2.c' Cython extension (up-to-date)
+    skipping 'imagecodecs/_gif.c' Cython extension (up-to-date)
+    skipping 'imagecodecs/_imcd.c' Cython extension (up-to-date)
+    skipping 'imagecodecs/_jpeg2k.c' Cython extension (up-to-date)
+    skipping 'imagecodecs/_jpeg8.c' Cython extension (up-to-date)
+    skipping 'imagecodecs/_jpegsof3.c' Cython extension (up-to-date)
+    skipping 'imagecodecs/_jpegxr.c' Cython extension (up-to-date)
+    skipping 'imagecodecs/_lz4.c' Cython extension (up-to-date)
+    skipping 'imagecodecs/_lzf.c' Cython extension (up-to-date)
+    skipping 'imagecodecs/_lzma.c' Cython extension (up-to-date)
+    skipping 'imagecodecs/_png.c' Cython extension (up-to-date)
+    skipping 'imagecodecs/_shared.c' Cython extension (up-to-date)
+    skipping 'imagecodecs/_snappy.c' Cython extension (up-to-date)
+    skipping 'imagecodecs/_tiff.c' Cython extension (up-to-date)
+    skipping 'imagecodecs/_webp.c' Cython extension (up-to-date)
+    skipping 'imagecodecs/_zlib.c' Cython extension (up-to-date)
+    skipping 'imagecodecs/_zopfli.c' Cython extension (up-to-date)
+    skipping 'imagecodecs/_zstd.c' Cython extension (up-to-date)
+    building 'imagecodecs._aec' extension
+    creating build/temp.linux-aarch64-3.6
+    creating build/temp.linux-aarch64-3.6/imagecodecs
+    aarch64-linux-gnu-gcc -pthread -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -Iimagecodecs -I/usr/include/python3.6m -I/usr/local/lib/python3.6/dist-packages/numpy/core/include -c imagecodecs/_aec.c -o build/temp.linux-aarch64-3.6/imagecodecs/_aec.o
+    In file included from /usr/include/python3.6m/numpy/ndarraytypes.h:1809:0,
+                     from /usr/include/python3.6m/numpy/ndarrayobject.h:18,
+                     from /usr/include/python3.6m/numpy/arrayobject.h:4,
+                     from imagecodecs/_aec.c:598:
+    /usr/include/python3.6m/numpy/npy_1_7_deprecated_api.h:15:2: warning: #warning "Using deprecated NumPy API, disable it by " "#defining NPY_NO_DEPRECATED_API NPY_1_7_API_VERSION" [-Wcpp]
+     #warning "Using deprecated NumPy API, disable it by " \
+      ^~~~~~~
+    aarch64-linux-gnu-gcc -pthread -shared -Wl,-O1 -Wl,-Bsymbolic-functions -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-Bsymbolic-functions -Wl,-z,relro -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 build/temp.linux-aarch64-3.6/imagecodecs/_aec.o -lm -laec -o build/lib.linux-aarch64-3.6/imagecodecs/_aec.cpython-36m-aarch64-linux-gnu.so
+    building 'imagecodecs._bitshuffle' extension
+    creating build/temp.linux-aarch64-3.6/bitshuffle-0.3.5
+    aarch64-linux-gnu-gcc -pthread -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -Iimagecodecs -Ibitshuffle-0.3.5 -I/usr/include/python3.6m -I/usr/local/lib/python3.6/dist-packages/numpy/core/include -c imagecodecs/_bitshuffle.c -o build/temp.linux-aarch64-3.6/imagecodecs/_bitshuffle.o
+    In file included from /usr/include/python3.6m/numpy/ndarraytypes.h:1809:0,
+                     from /usr/include/python3.6m/numpy/ndarrayobject.h:18,
+                     from /usr/include/python3.6m/numpy/arrayobject.h:4,
+                     from imagecodecs/_bitshuffle.c:598:
+    /usr/include/python3.6m/numpy/npy_1_7_deprecated_api.h:15:2: warning: #warning "Using deprecated NumPy API, disable it by " "#defining NPY_NO_DEPRECATED_API NPY_1_7_API_VERSION" [-Wcpp]
+     #warning "Using deprecated NumPy API, disable it by " \
+      ^~~~~~~
+    aarch64-linux-gnu-gcc -pthread -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -Iimagecodecs -Ibitshuffle-0.3.5 -I/usr/include/python3.6m -I/usr/local/lib/python3.6/dist-packages/numpy/core/include -c bitshuffle-0.3.5/bitshuffle_core.c -o build/temp.linux-aarch64-3.6/bitshuffle-0.3.5/bitshuffle_core.o
+    bitshuffle-0.3.5/bitshuffle_core.c: In function ‘bshuf_trans_byte_elem_NEON_16’:
+    bitshuffle-0.3.5/bitshuffle_core.c:391:23: warning: pointer targets in passing argument 1 of ‘vld1q_s8’ differ in signedness [-Wpointer-sign]
+             a0 = vld1q_s8(in_b + 2*ii + 0*16);
+                           ^~~~
+    In file included from bitshuffle-0.3.5/bitshuffle_core.c:37:0:
+    /usr/lib/gcc/aarch64-linux-gnu/7/include/arm_neon.h:17197:1: note: expected ‘const int8_t * {aka const signed char *}’ but argument is of type ‘const char *’
+     vld1q_s8 (const int8_t *a)
+     ^~~~~~~~
+    bitshuffle-0.3.5/bitshuffle_core.c:392:23: warning: pointer targets in passing argument 1 of ‘vld1q_s8’ differ in signedness [-Wpointer-sign]
+             b0 = vld1q_s8(in_b + 2*ii + 1*16);
+                           ^~~~
+    In file included from bitshuffle-0.3.5/bitshuffle_core.c:37:0:
+    /usr/lib/gcc/aarch64-linux-gnu/7/include/arm_neon.h:17197:1: note: expected ‘const int8_t * {aka const signed char *}’ but argument is of type ‘const char *’
+     vld1q_s8 (const int8_t *a)
+     ^~~~~~~~
+    bitshuffle-0.3.5/bitshuffle_core.c:406:18: warning: pointer targets in passing argument 1 of ‘vst1q_s8’ differ in signedness [-Wpointer-sign]
+             vst1q_s8(out_b + 0*size + ii, a0);
+                      ^~~~~
+    In file included from bitshuffle-0.3.5/bitshuffle_core.c:37:0:
+    /usr/lib/gcc/aarch64-linux-gnu/7/include/arm_neon.h:26906:1: note: expected ‘int8_t * {aka signed char *}’ but argument is of type ‘char *’
+     vst1q_s8 (int8_t *a, int8x16_t b)
+     ^~~~~~~~
+    bitshuffle-0.3.5/bitshuffle_core.c:407:18: warning: pointer targets in passing argument 1 of ‘vst1q_s8’ differ in signedness [-Wpointer-sign]
+             vst1q_s8(out_b + 1*size + ii, b0);
+                      ^~~~~
+    In file included from bitshuffle-0.3.5/bitshuffle_core.c:37:0:
+    /usr/lib/gcc/aarch64-linux-gnu/7/include/arm_neon.h:26906:1: note: expected ‘int8_t * {aka signed char *}’ but argument is of type ‘char *’
+     vst1q_s8 (int8_t *a, int8x16_t b)
+     ^~~~~~~~
+    bitshuffle-0.3.5/bitshuffle_core.c: In function ‘bshuf_trans_byte_elem_NEON_32’:
+    bitshuffle-0.3.5/bitshuffle_core.c:427:23: warning: pointer targets in passing argument 1 of ‘vld1q_s8’ differ in signedness [-Wpointer-sign]
+             a0 = vld1q_s8(in_b + 4*ii + 0*16);
+                           ^~~~
+    In file included from bitshuffle-0.3.5/bitshuffle_core.c:37:0:
+    /usr/lib/gcc/aarch64-linux-gnu/7/include/arm_neon.h:17197:1: note: expected ‘const int8_t * {aka const signed char *}’ but argument is of type ‘const char *’
+     vld1q_s8 (const int8_t *a)
+     ^~~~~~~~
+    bitshuffle-0.3.5/bitshuffle_core.c:428:23: warning: pointer targets in passing argument 1 of ‘vld1q_s8’ differ in signedness [-Wpointer-sign]
+             b0 = vld1q_s8(in_b + 4*ii + 1*16);
+                           ^~~~
+    In file included from bitshuffle-0.3.5/bitshuffle_core.c:37:0:
+    /usr/lib/gcc/aarch64-linux-gnu/7/include/arm_neon.h:17197:1: note: expected ‘const int8_t * {aka const signed char *}’ but argument is of type ‘const char *’
+     vld1q_s8 (const int8_t *a)
+     ^~~~~~~~
+    bitshuffle-0.3.5/bitshuffle_core.c:429:23: warning: pointer targets in passing argument 1 of ‘vld1q_s8’ differ in signedness [-Wpointer-sign]
+             c0 = vld1q_s8(in_b + 4*ii + 2*16);
+                           ^~~~
+    In file included from bitshuffle-0.3.5/bitshuffle_core.c:37:0:
+    /usr/lib/gcc/aarch64-linux-gnu/7/include/arm_neon.h:17197:1: note: expected ‘const int8_t * {aka const signed char *}’ but argument is of type ‘const char *’
+     vld1q_s8 (const int8_t *a)
+     ^~~~~~~~
+    bitshuffle-0.3.5/bitshuffle_core.c:430:23: warning: pointer targets in passing argument 1 of ‘vld1q_s8’ differ in signedness [-Wpointer-sign]
+             d0 = vld1q_s8(in_b + 4*ii + 3*16);
+                           ^~~~
+    In file included from bitshuffle-0.3.5/bitshuffle_core.c:37:0:
+    /usr/lib/gcc/aarch64-linux-gnu/7/include/arm_neon.h:17197:1: note: expected ‘const int8_t * {aka const signed char *}’ but argument is of type ‘const char *’
+     vld1q_s8 (const int8_t *a)
+     ^~~~~~~~
+    bitshuffle-0.3.5/bitshuffle_core.c: In function ‘bshuf_trans_byte_elem_NEON_64’:
+    bitshuffle-0.3.5/bitshuffle_core.c:473:23: warning: pointer targets in passing argument 1 of ‘vld1q_s8’ differ in signedness [-Wpointer-sign]
+             a0 = vld1q_s8(in_b + 8*ii + 0*16);
+                           ^~~~
+    In file included from bitshuffle-0.3.5/bitshuffle_core.c:37:0:
+    /usr/lib/gcc/aarch64-linux-gnu/7/include/arm_neon.h:17197:1: note: expected ‘const int8_t * {aka const signed char *}’ but argument is of type ‘const char *’
+     vld1q_s8 (const int8_t *a)
+     ^~~~~~~~
+    bitshuffle-0.3.5/bitshuffle_core.c:474:23: warning: pointer targets in passing argument 1 of ‘vld1q_s8’ differ in signedness [-Wpointer-sign]
+             b0 = vld1q_s8(in_b + 8*ii + 1*16);
+                           ^~~~
+    In file included from bitshuffle-0.3.5/bitshuffle_core.c:37:0:
+    /usr/lib/gcc/aarch64-linux-gnu/7/include/arm_neon.h:17197:1: note: expected ‘const int8_t * {aka const signed char *}’ but argument is of type ‘const char *’
+     vld1q_s8 (const int8_t *a)
+     ^~~~~~~~
+    bitshuffle-0.3.5/bitshuffle_core.c:475:23: warning: pointer targets in passing argument 1 of ‘vld1q_s8’ differ in signedness [-Wpointer-sign]
+             c0 = vld1q_s8(in_b + 8*ii + 2*16);
+                           ^~~~
+    In file included from bitshuffle-0.3.5/bitshuffle_core.c:37:0:
+    /usr/lib/gcc/aarch64-linux-gnu/7/include/arm_neon.h:17197:1: note: expected ‘const int8_t * {aka const signed char *}’ but argument is of type ‘const char *’
+     vld1q_s8 (const int8_t *a)
+     ^~~~~~~~
+    bitshuffle-0.3.5/bitshuffle_core.c:476:23: warning: pointer targets in passing argument 1 of ‘vld1q_s8’ differ in signedness [-Wpointer-sign]
+             d0 = vld1q_s8(in_b + 8*ii + 3*16);
+                           ^~~~
+    In file included from bitshuffle-0.3.5/bitshuffle_core.c:37:0:
+    /usr/lib/gcc/aarch64-linux-gnu/7/include/arm_neon.h:17197:1: note: expected ‘const int8_t * {aka const signed char *}’ but argument is of type ‘const char *’
+     vld1q_s8 (const int8_t *a)
+     ^~~~~~~~
+    bitshuffle-0.3.5/bitshuffle_core.c:477:23: warning: pointer targets in passing argument 1 of ‘vld1q_s8’ differ in signedness [-Wpointer-sign]
+             e0 = vld1q_s8(in_b + 8*ii + 4*16);
+                           ^~~~
+    In file included from bitshuffle-0.3.5/bitshuffle_core.c:37:0:
+    /usr/lib/gcc/aarch64-linux-gnu/7/include/arm_neon.h:17197:1: note: expected ‘const int8_t * {aka const signed char *}’ but argument is of type ‘const char *’
+     vld1q_s8 (const int8_t *a)
+     ^~~~~~~~
+    bitshuffle-0.3.5/bitshuffle_core.c:478:23: warning: pointer targets in passing argument 1 of ‘vld1q_s8’ differ in signedness [-Wpointer-sign]
+             f0 = vld1q_s8(in_b + 8*ii + 5*16);
+                           ^~~~
+    In file included from bitshuffle-0.3.5/bitshuffle_core.c:37:0:
+    /usr/lib/gcc/aarch64-linux-gnu/7/include/arm_neon.h:17197:1: note: expected ‘const int8_t * {aka const signed char *}’ but argument is of type ‘const char *’
+     vld1q_s8 (const int8_t *a)
+     ^~~~~~~~
+    bitshuffle-0.3.5/bitshuffle_core.c:479:23: warning: pointer targets in passing argument 1 of ‘vld1q_s8’ differ in signedness [-Wpointer-sign]
+             g0 = vld1q_s8(in_b + 8*ii + 6*16);
+                           ^~~~
+    In file included from bitshuffle-0.3.5/bitshuffle_core.c:37:0:
+    /usr/lib/gcc/aarch64-linux-gnu/7/include/arm_neon.h:17197:1: note: expected ‘const int8_t * {aka const signed char *}’ but argument is of type ‘const char *’
+     vld1q_s8 (const int8_t *a)
+     ^~~~~~~~
+    bitshuffle-0.3.5/bitshuffle_core.c:480:23: warning: pointer targets in passing argument 1 of ‘vld1q_s8’ differ in signedness [-Wpointer-sign]
+             h0 = vld1q_s8(in_b + 8*ii + 7*16);
+                           ^~~~
+    In file included from bitshuffle-0.3.5/bitshuffle_core.c:37:0:
+    /usr/lib/gcc/aarch64-linux-gnu/7/include/arm_neon.h:17197:1: note: expected ‘const int8_t * {aka const signed char *}’ but argument is of type ‘const char *’
+     vld1q_s8 (const int8_t *a)
+     ^~~~~~~~
+    bitshuffle-0.3.5/bitshuffle_core.c:518:18: warning: pointer targets in passing argument 1 of ‘vst1q_s8’ differ in signedness [-Wpointer-sign]
+             vst1q_s8(out_b + 0*size + ii, a0);
+                      ^~~~~
+    In file included from bitshuffle-0.3.5/bitshuffle_core.c:37:0:
+    /usr/lib/gcc/aarch64-linux-gnu/7/include/arm_neon.h:26906:1: note: expected ‘int8_t * {aka signed char *}’ but argument is of type ‘char *’
+     vst1q_s8 (int8_t *a, int8x16_t b)
+     ^~~~~~~~
+    bitshuffle-0.3.5/bitshuffle_core.c:519:18: warning: pointer targets in passing argument 1 of ‘vst1q_s8’ differ in signedness [-Wpointer-sign]
+             vst1q_s8(out_b + 1*size + ii, b0);
+                      ^~~~~
+    In file included from bitshuffle-0.3.5/bitshuffle_core.c:37:0:
+    /usr/lib/gcc/aarch64-linux-gnu/7/include/arm_neon.h:26906:1: note: expected ‘int8_t * {aka signed char *}’ but argument is of type ‘char *’
+     vst1q_s8 (int8_t *a, int8x16_t b)
+     ^~~~~~~~
+    bitshuffle-0.3.5/bitshuffle_core.c:520:18: warning: pointer targets in passing argument 1 of ‘vst1q_s8’ differ in signedness [-Wpointer-sign]
+             vst1q_s8(out_b + 2*size + ii, c0);
+                      ^~~~~
+    In file included from bitshuffle-0.3.5/bitshuffle_core.c:37:0:
+    /usr/lib/gcc/aarch64-linux-gnu/7/include/arm_neon.h:26906:1: note: expected ‘int8_t * {aka signed char *}’ but argument is of type ‘char *’
+     vst1q_s8 (int8_t *a, int8x16_t b)
+     ^~~~~~~~
+    bitshuffle-0.3.5/bitshuffle_core.c:521:18: warning: pointer targets in passing argument 1 of ‘vst1q_s8’ differ in signedness [-Wpointer-sign]
+             vst1q_s8(out_b + 3*size + ii, d0);
+                      ^~~~~
+    In file included from bitshuffle-0.3.5/bitshuffle_core.c:37:0:
+    /usr/lib/gcc/aarch64-linux-gnu/7/include/arm_neon.h:26906:1: note: expected ‘int8_t * {aka signed char *}’ but argument is of type ‘char *’
+     vst1q_s8 (int8_t *a, int8x16_t b)
+     ^~~~~~~~
+    bitshuffle-0.3.5/bitshuffle_core.c:522:18: warning: pointer targets in passing argument 1 of ‘vst1q_s8’ differ in signedness [-Wpointer-sign]
+             vst1q_s8(out_b + 4*size + ii, e0);
+                      ^~~~~
+    In file included from bitshuffle-0.3.5/bitshuffle_core.c:37:0:
+    /usr/lib/gcc/aarch64-linux-gnu/7/include/arm_neon.h:26906:1: note: expected ‘int8_t * {aka signed char *}’ but argument is of type ‘char *’
+     vst1q_s8 (int8_t *a, int8x16_t b)
+     ^~~~~~~~
+    bitshuffle-0.3.5/bitshuffle_core.c:523:18: warning: pointer targets in passing argument 1 of ‘vst1q_s8’ differ in signedness [-Wpointer-sign]
+             vst1q_s8(out_b + 5*size + ii, f0);
+                      ^~~~~
+    In file included from bitshuffle-0.3.5/bitshuffle_core.c:37:0:
+    /usr/lib/gcc/aarch64-linux-gnu/7/include/arm_neon.h:26906:1: note: expected ‘int8_t * {aka signed char *}’ but argument is of type ‘char *’
+     vst1q_s8 (int8_t *a, int8x16_t b)
+     ^~~~~~~~
+    bitshuffle-0.3.5/bitshuffle_core.c:524:18: warning: pointer targets in passing argument 1 of ‘vst1q_s8’ differ in signedness [-Wpointer-sign]
+             vst1q_s8(out_b + 6*size + ii, g0);
+                      ^~~~~
+    In file included from bitshuffle-0.3.5/bitshuffle_core.c:37:0:
+    /usr/lib/gcc/aarch64-linux-gnu/7/include/arm_neon.h:26906:1: note: expected ‘int8_t * {aka signed char *}’ but argument is of type ‘char *’
+     vst1q_s8 (int8_t *a, int8x16_t b)
+     ^~~~~~~~
+    bitshuffle-0.3.5/bitshuffle_core.c:525:18: warning: pointer targets in passing argument 1 of ‘vst1q_s8’ differ in signedness [-Wpointer-sign]
+             vst1q_s8(out_b + 7*size + ii, h0);
+                      ^~~~~
+    In file included from bitshuffle-0.3.5/bitshuffle_core.c:37:0:
+    /usr/lib/gcc/aarch64-linux-gnu/7/include/arm_neon.h:26906:1: note: expected ‘int8_t * {aka signed char *}’ but argument is of type ‘char *’
+     vst1q_s8 (int8_t *a, int8x16_t b)
+     ^~~~~~~~
+    bitshuffle-0.3.5/bitshuffle_core.c: In function ‘bshuf_trans_byte_bitrow_NEON’:
+    bitshuffle-0.3.5/bitshuffle_core.c:683:27: warning: pointer targets in passing argument 1 of ‘vld1q_s8’ differ in signedness [-Wpointer-sign]
+                 a0 = vld1q_s8(in_b + (ii + 0)*nbyte_row + jj);
+                               ^~~~
+    In file included from bitshuffle-0.3.5/bitshuffle_core.c:37:0:
+    /usr/lib/gcc/aarch64-linux-gnu/7/include/arm_neon.h:17197:1: note: expected ‘const int8_t * {aka const signed char *}’ but argument is of type ‘const char *’
+     vld1q_s8 (const int8_t *a)
+     ^~~~~~~~
+    bitshuffle-0.3.5/bitshuffle_core.c:684:27: warning: pointer targets in passing argument 1 of ‘vld1q_s8’ differ in signedness [-Wpointer-sign]
+                 b0 = vld1q_s8(in_b + (ii + 1)*nbyte_row + jj);
+                               ^~~~
+    In file included from bitshuffle-0.3.5/bitshuffle_core.c:37:0:
+    /usr/lib/gcc/aarch64-linux-gnu/7/include/arm_neon.h:17197:1: note: expected ‘const int8_t * {aka const signed char *}’ but argument is of type ‘const char *’
+     vld1q_s8 (const int8_t *a)
+     ^~~~~~~~
+    bitshuffle-0.3.5/bitshuffle_core.c:685:27: warning: pointer targets in passing argument 1 of ‘vld1q_s8’ differ in signedness [-Wpointer-sign]
+                 c0 = vld1q_s8(in_b + (ii + 2)*nbyte_row + jj);
+                               ^~~~
+    In file included from bitshuffle-0.3.5/bitshuffle_core.c:37:0:
+    /usr/lib/gcc/aarch64-linux-gnu/7/include/arm_neon.h:17197:1: note: expected ‘const int8_t * {aka const signed char *}’ but argument is of type ‘const char *’
+     vld1q_s8 (const int8_t *a)
+     ^~~~~~~~
+    bitshuffle-0.3.5/bitshuffle_core.c:686:27: warning: pointer targets in passing argument 1 of ‘vld1q_s8’ differ in signedness [-Wpointer-sign]
+                 d0 = vld1q_s8(in_b + (ii + 3)*nbyte_row + jj);
+                               ^~~~
+    In file included from bitshuffle-0.3.5/bitshuffle_core.c:37:0:
+    /usr/lib/gcc/aarch64-linux-gnu/7/include/arm_neon.h:17197:1: note: expected ‘const int8_t * {aka const signed char *}’ but argument is of type ‘const char *’
+     vld1q_s8 (const int8_t *a)
+     ^~~~~~~~
+    bitshuffle-0.3.5/bitshuffle_core.c:687:27: warning: pointer targets in passing argument 1 of ‘vld1q_s8’ differ in signedness [-Wpointer-sign]
+                 e0 = vld1q_s8(in_b + (ii + 4)*nbyte_row + jj);
+                               ^~~~
+    In file included from bitshuffle-0.3.5/bitshuffle_core.c:37:0:
+    /usr/lib/gcc/aarch64-linux-gnu/7/include/arm_neon.h:17197:1: note: expected ‘const int8_t * {aka const signed char *}’ but argument is of type ‘const char *’
+     vld1q_s8 (const int8_t *a)
+     ^~~~~~~~
+    bitshuffle-0.3.5/bitshuffle_core.c:688:27: warning: pointer targets in passing argument 1 of ‘vld1q_s8’ differ in signedness [-Wpointer-sign]
+                 f0 = vld1q_s8(in_b + (ii + 5)*nbyte_row + jj);
+                               ^~~~
+    In file included from bitshuffle-0.3.5/bitshuffle_core.c:37:0:
+    /usr/lib/gcc/aarch64-linux-gnu/7/include/arm_neon.h:17197:1: note: expected ‘const int8_t * {aka const signed char *}’ but argument is of type ‘const char *’
+     vld1q_s8 (const int8_t *a)
+     ^~~~~~~~
+    bitshuffle-0.3.5/bitshuffle_core.c:689:27: warning: pointer targets in passing argument 1 of ‘vld1q_s8’ differ in signedness [-Wpointer-sign]
+                 g0 = vld1q_s8(in_b + (ii + 6)*nbyte_row + jj);
+                               ^~~~
+    In file included from bitshuffle-0.3.5/bitshuffle_core.c:37:0:
+    /usr/lib/gcc/aarch64-linux-gnu/7/include/arm_neon.h:17197:1: note: expected ‘const int8_t * {aka const signed char *}’ but argument is of type ‘const char *’
+     vld1q_s8 (const int8_t *a)
+     ^~~~~~~~
+    bitshuffle-0.3.5/bitshuffle_core.c:690:27: warning: pointer targets in passing argument 1 of ‘vld1q_s8’ differ in signedness [-Wpointer-sign]
+                 h0 = vld1q_s8(in_b + (ii + 7)*nbyte_row + jj);
+                               ^~~~
+    In file included from bitshuffle-0.3.5/bitshuffle_core.c:37:0:
+    /usr/lib/gcc/aarch64-linux-gnu/7/include/arm_neon.h:17197:1: note: expected ‘const int8_t * {aka const signed char *}’ but argument is of type ‘const char *’
+     vld1q_s8 (const int8_t *a)
+     ^~~~~~~~
+    aarch64-linux-gnu-gcc -pthread -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -Iimagecodecs -Ibitshuffle-0.3.5 -I/usr/include/python3.6m -I/usr/local/lib/python3.6/dist-packages/numpy/core/include -c bitshuffle-0.3.5/iochain.c -o build/temp.linux-aarch64-3.6/bitshuffle-0.3.5/iochain.o
+    aarch64-linux-gnu-gcc -pthread -shared -Wl,-O1 -Wl,-Bsymbolic-functions -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-Bsymbolic-functions -Wl,-z,relro -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 build/temp.linux-aarch64-3.6/imagecodecs/_bitshuffle.o build/temp.linux-aarch64-3.6/bitshuffle-0.3.5/bitshuffle_core.o build/temp.linux-aarch64-3.6/bitshuffle-0.3.5/iochain.o -lm -o build/lib.linux-aarch64-3.6/imagecodecs/_bitshuffle.cpython-36m-aarch64-linux-gnu.so
+    building 'imagecodecs._blosc' extension
+    aarch64-linux-gnu-gcc -pthread -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -Iimagecodecs -I/usr/include/python3.6m -I/usr/local/lib/python3.6/dist-packages/numpy/core/include -c imagecodecs/_blosc.c -o build/temp.linux-aarch64-3.6/imagecodecs/_blosc.o
+    In file included from /usr/include/python3.6m/numpy/ndarraytypes.h:1809:0,
+                     from /usr/include/python3.6m/numpy/ndarrayobject.h:18,
+                     from /usr/include/python3.6m/numpy/arrayobject.h:4,
+                     from imagecodecs/_blosc.c:598:
+    /usr/include/python3.6m/numpy/npy_1_7_deprecated_api.h:15:2: warning: #warning "Using deprecated NumPy API, disable it by " "#defining NPY_NO_DEPRECATED_API NPY_1_7_API_VERSION" [-Wcpp]
+     #warning "Using deprecated NumPy API, disable it by " \
+      ^~~~~~~
+    imagecodecs/_blosc.c:602:10: fatal error: blosc.h: No such file or directory
+     #include "blosc.h"
+              ^~~~~~~~~
+    compilation terminated.
+    error: command 'aarch64-linux-gnu-gcc' failed with exit status 1
+    ----------------------------------------
+ERROR: Command errored out with exit status 1: /usr/bin/python3 -u -c 'import sys, setuptools, tokenize; sys.argv[0] = '"'"'/tmp/pip-install-uf6adwmi/imagecodecs/setup.py'"'"'; __file__='"'"'/tmp/pip-install-uf6adwmi/imagecodecs/setup.py'"'"';f=getattr(tokenize, '"'"'open'"'"', open)(__file__);code=f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' install --record /tmp/pip-record-ioo5rlfp/install-record.txt --single-version-externally-managed --compile --install-headers /usr/local/include/python3.6/imagecodecs Check the logs for full command output.
