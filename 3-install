@@ -105,7 +105,7 @@ sudo apt-get install --no-install-recommends libboost-all-dev
 
 
 
-——+——+——+——+——+——+——+——+——+——+——+——
+——+——+——+——+——+——+——+——+——+——+——+——   2015-05-15 在JP4.3 上安装还是失败
 https://scikit-image.org/docs/stable/install.html
 Installing  scikit-image： 
 
@@ -150,18 +150,36 @@ print(torch.__version__)
 
 
 
+5.
+torchvision：
+
+sudo apt-get install libjpeg-dev zlib1g-dev
+git clone -b v0.3.0 https://github.com/pytorch/vision torchvision   #0.6.0
+cd torchvision
+sudo python3.6 setup.py install
+#  https://blog.csdn.net/u011119817/article/details/99679350
+
+------------
+torchvision       安装成功过： 0.6.0版本最新。
+
+$ sudo apt-get install libjpeg-dev zlib1g-dev
+$ git clone --branch <version> https://github.com/pytorch/vision torchvision   # see below for version of torchvision to download
+$ cd torchvision
+$ sudo python setup.py install
+$ cd ../  # attempting to load torchvision from build dir will result in import error
+$ pip install 'pillow<7' # not needed for torchvision v0.5.0+
+#https://forums.developer.nvidia.com/t/pytorch-for-jetson-nano-version-1-5-0-now-available/72048
 
 
-
-
-5.  Install the keras：
+6.  Install the keras：
 
 sudo apt-get install python3-scipy
 sudo pip3 install keras
 or
 sudo apt-get install python3-keras
 
-6.
+
+7.
 
 pip uninstall apex
 git clone https://www.github.com/nvidia/apex
@@ -169,12 +187,7 @@ cd apex
 sudo python3.6 setup.py install
 
 
-7.
-sudo apt-get install libjpeg-dev zlib1g-dev
-git clone -b v0.3.0 https://github.com/pytorch/vision torchvision   #0.6.0
-cd torchvision
-sudo python3.6 setup.py install
-#  https://blog.csdn.net/u011119817/article/details/99679350
+
 
 
 
