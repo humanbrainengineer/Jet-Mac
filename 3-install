@@ -169,6 +169,40 @@ $ sudo python setup.py install
 $ cd ../  # attempting to load torchvision from build dir will result in import error
 $ pip install 'pillow<7' # not needed for torchvision v0.5.0+
 #https://forums.developer.nvidia.com/t/pytorch-for-jetson-nano-version-1-5-0-now-available/72048
+#  就算完成了安装0.6.0 也不能识别  pointrend 的分割代码。最后显示：
+
+
+-----------------------------------------------------------
+jet@jet-desktop:~/Documents/PointRend-PyTorch-master--ok$ python3.6 main.py configs/default.yaml test_codes
+Traceback (most recent call last):
+  File "main.py", line 16, in <module>
+    from model import deeplabv3, PointHead, PointRend
+  File "/home/jet/Documents/PointRend-PyTorch-master--ok/model/__init__.py", line 2, in <module>
+    from torchvision.models.resnet import resnet50, resnet101
+  File "/usr/local/lib/python3.6/dist-packages/torchvision-0.7.0a0-py3.6-linux-aarch64.egg/torchvision/__init__.py", line 5, in <module>
+    from torchvision import models
+  File "/usr/local/lib/python3.6/dist-packages/torchvision-0.7.0a0-py3.6-linux-aarch64.egg/torchvision/models/__init__.py", line 12, in <module>
+    from . import detection
+  File "/usr/local/lib/python3.6/dist-packages/torchvision-0.7.0a0-py3.6-linux-aarch64.egg/torchvision/models/detection/__init__.py", line 1, in <module>
+    from .faster_rcnn import *
+  File "/usr/local/lib/python3.6/dist-packages/torchvision-0.7.0a0-py3.6-linux-aarch64.egg/torchvision/models/detection/faster_rcnn.py", line 7, in <module>
+    from torchvision.ops import misc as misc_nn_ops
+  File "/usr/local/lib/python3.6/dist-packages/torchvision-0.7.0a0-py3.6-linux-aarch64.egg/torchvision/ops/__init__.py", line 13, in <module>
+    _register_custom_op()
+  File "/usr/local/lib/python3.6/dist-packages/torchvision-0.7.0a0-py3.6-linux-aarch64.egg/torchvision/ops/_register_onnx_ops.py", line 51, in _register_custom_op
+    register_custom_op_symbolic('torchvision::_new_empty_tensor_op', new_empty_tensor_op, _onnx_opset_version)
+  File "/usr/local/lib/python3.6/dist-packages/torch/onnx/__init__.py", line 200, in register_custom_op_symbolic
+    return utils.register_custom_op_symbolic(symbolic_name, symbolic_fn, opset_version)
+  File "/usr/local/lib/python3.6/dist-packages/torch/onnx/utils.py", line 793, in register_custom_op_symbolic
+    .format(symbolic_name))
+RuntimeError: Failed to register operator torchvision::_new_empty_tensor_op.                            The symbolic name must match the format Domain::Name,                            and sould start with a letter and contain only                            alphanumerical characters
+
+
+-----------------------------------------------------------
+
+
+
+
 
 
 6.  Install the keras：
@@ -185,13 +219,6 @@ pip uninstall apex
 git clone https://www.github.com/nvidia/apex
 cd apex
 sudo python3.6 setup.py install
-
-
-
-
-
-
-
 
  
 
