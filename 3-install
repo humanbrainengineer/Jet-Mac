@@ -55,7 +55,7 @@ sudo apt install libblas-dev
 sudo apt install gfortran
 
 
-sudo pip3 install protobuf
+sudo pip3 install protobuf  (sudo pip3 install --upgrade protobuf)
 sudo pip3 install testresources
 sudo pip3 install numpy grpcio absl-py py-cpuinfo psutil portpicker six mock requests gast
 
