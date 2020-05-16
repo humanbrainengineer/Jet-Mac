@@ -66,6 +66,8 @@ sudo apt-get install libfontconfig1-dev
 sudo apt-get install libboost-all-dev
 sudo apt-get install libbz2-dev
 sudo apt-get install libgif-dev
+
+#http://www.linuxfromscratch.org/blfs/view/svn/general/openjpeg2.html
 #@@
 
 sudo pip3 install protobuf  (sudo pip3 install --upgrade protobuf)
