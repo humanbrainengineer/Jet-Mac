@@ -47,6 +47,7 @@ sudo apt-get install libopenblas-dev libatlas-base-dev
  
 sudo pip3 install grpcio absl-py py-cpuinfo psutil portpicker grpcio six mock requests gast astor termcolor
 
+sudo apt-get install libblosc-dev  libbrotli-dev
 
 sudo apt-get install libjpeg-dev 
 
