@@ -67,6 +67,7 @@ sudo apt-get install libboost-all-dev
 sudo apt-get install libbz2-dev
 sudo apt-get install libgif-dev
 
+Openjpeg:
 #http://www.linuxfromscratch.org/blfs/view/svn/general/openjpeg2.html
 #@@
 
