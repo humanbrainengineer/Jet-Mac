@@ -62,6 +62,11 @@ sudo apt-get install libfreetype6-dev
 sudo ln -s /usr/include/freetype2/freetype/ /usr/include/freetype
 sudo apt-get install libfontconfig1-dev
 
+#@@
+sudo apt-get install libboost-all-dev
+sudo apt-get install libbz2-dev
+sudo apt-get install libgif-dev
+#@@
 
 sudo pip3 install protobuf  (sudo pip3 install --upgrade protobuf)
 sudo pip3 install testresources
@@ -82,7 +87,7 @@ sudo pip3 install numpy absl-py py-cpuinfo psutil portpicker six mock requests g
 
 sudo pip3 install keras-applications keras-preprocessing wrapt google-pasta
 
-sudo apt-get install zip libjpeg8-dev
+sudo apt-get install zip libjpeg8-dev liblcms2-dev
 
 
 
