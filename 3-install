@@ -105,6 +105,8 @@ sudo apt-get install libgtk-3-dev libavcodec-dev libavformat-dev python-dev pyth
 
 
 Scipy:
+python -m pip3 install --user numpy scipy matplotlib ipython jupyter pandas sympy nose
+or
 python -m pip install --user numpy scipy matplotlib ipython jupyter pandas sympy nose
 https://www.scipy.org/install.html#pip-install
 sudo pip3 install scipy
