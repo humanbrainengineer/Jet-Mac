@@ -5,6 +5,17 @@ https://tensorflow.google.cn/install/source#linux
 sudo apt install python3-pip
 sudo pip3 install --upgrade pip
 
+Installing the most important lib from offical web:
+sudo apt-get update
+sudo apt-get install nvidia-jetpack
+sudo apt-cache show nvidia-jetpack
+sudo apt-get install nvidia-jetpack
+sudo apt autoremove --purge nvidia-container-csv-cuda libopencv-python libvisionworks-sfm-dev libvisionworks-dev libvisionworks-samples libnvparsers6 libcudnn7-doc libcudnn7-dev libnvinfer-samples libnvinfer-bin nvidia-container-csv-cudnn libvisionworks-tracking-dev vpi-samples tensorrt libopencv libnvinfer-doc libnvparsers-dev libcudnn7 libnvidia-container0 cuda-toolkit-10-0 nvidia-container-csv-visionworks graphsurgeon-tf libopencv-samples python-libnvinfer-dev libnvinfer-plugin-dev libnvinfer-plugin6 nvidia-container-toolkit libnvinfer-dev libvisionworks libopencv-dev nvidia-l4t-jetson-multimedia-api vpi-dev vpi python3-libnvinfer python3-libnvinfer-dev opencv-licenses nvidia-container-csv-tensorrt libnvinfer6 libnvonnxparsers-dev libnvonnxparsers6 uff-converter-tf nvidia-docker2 libvisionworks-sfm libnvidia-container-tools nvidia-container-runtime python-libnvinfer libvisionworks-tracking
+sudo apt purge cuda-repo-l4t-10-0-local-10.0.326 libvisionworks-repo libvisionworks-sfm-repo libvisionworks-tracking-repo
+sudo apt clean
+sudo apt-get install nvidia-jetpack
+
+https://docs.nvidia.com/jetson/jetpack/install-jetpack/index.html
 
 
 2.
