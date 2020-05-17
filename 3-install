@@ -181,6 +181,8 @@ sudo python3.6 setup.py install
 ------------
 torchvision       安装成功过： 0.6.0版本最新。
 
+sudo pip3 install torchvision
+
 $ sudo apt-get install libjpeg-dev zlib1g-dev
 $ git clone --branch <version> https://github.com/pytorch/vision torchvision   # see below for version of torchvision to download
 $ cd torchvision
