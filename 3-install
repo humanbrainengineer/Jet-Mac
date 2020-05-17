@@ -103,6 +103,10 @@ Dependences：
 sudo apt-get install libgtk-3-dev libavcodec-dev libavformat-dev python-dev python-numpy python-tk libtbb2 libtbb-dev libjpeg-dev libpng-dev libtiff-dev libdc1394-22-dev libswscale-dev libopenexr-dev libeigen3-dev libfaac-dev libopencore-amrnb-dev libopencore-amrwb-dev libtheora-dev libvorbis-dev libxvidcore-dev libx264-dev libqt4-dev libqt4-opengl-dev sphinx-common texlive-latex-extra libv4l-dev libatlas-base-dev libqtgui4 python3-pyqt5 python3-dev qt5-default
 
 
+
+Scipy:
+python -m pip install --user numpy scipy matplotlib ipython jupyter pandas sympy nose
+https://www.scipy.org/install.html#pip-install
 sudo pip3 install scipy
 # 如果安装太慢，使用 sudo apt-get python3-scipy
   
