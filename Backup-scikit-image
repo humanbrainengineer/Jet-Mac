@@ -1,0 +1,211 @@
+1  cd /usr/include/
+    2  cd ..
+    3  ls
+    4  cd ..
+    5  ls
+    6  cd home/
+    7  ls
+    8  cd jet/
+    9  ls
+   10  git submodule update --init
+   11  apt-get install python-dev python3-dev python-setuptools python3-setuptools
+   12  sudo git submodule update --init
+   13  sudo apt-get install python-dev python3-dev python-setuptools python3-setuptools
+   14  ls
+   15  cd python-zstd/
+   16  python3 setup.py build_ext clean
+   17  sudo apt install zstd-dev
+   18  sudo pip3 install zstd-dev
+   19  sudo apt-get update
+   20  sudo apt-get install nvidia-jetpack
+   21  sudo apt-cache show nvidia-jetpack
+   22  history
+   23  sudo apt-get install nvidia-jetpack
+   24  sudo apt autoremove --purge nvidia-container-csv-cuda libopencv-python libvisionworks-sfm-dev libvisionworks-dev libvisionworks-samples libnvparsers6 libcudnn7-doc libcudnn7-dev libnvinfer-samples libnvinfer-bin nvidia-container-csv-cudnn libvisionworks-tracking-dev vpi-samples tensorrt libopencv libnvinfer-doc libnvparsers-dev libcudnn7 libnvidia-container0 cuda-toolkit-10-0 nvidia-container-csv-visionworks graphsurgeon-tf libopencv-samples python-libnvinfer-dev libnvinfer-plugin-dev libnvinfer-plugin6 nvidia-container-toolkit libnvinfer-dev libvisionworks libopencv-dev nvidia-l4t-jetson-multimedia-api vpi-dev vpi python3-libnvinfer python3-libnvinfer-dev opencv-licenses nvidia-container-csv-tensorrt libnvinfer6 libnvonnxparsers-dev libnvonnxparsers6 uff-converter-tf nvidia-docker2 libvisionworks-sfm libnvidia-container-tools nvidia-container-runtime python-libnvinfer libvisionworks-tracking
+   25  sudo apt purge cuda-repo-l4t-10-0-local-10.0.326 libvisionworks-repo libvisionworks-sfm-repo libvisionworks-tracking-repo
+   26  sudo apt clean
+   27  sudo apt-get install nvidia-jetpack
+   28  pip3 install numpy scipy
+   29  sudo apt-get install python3-pip python3-dev
+   30  python3 -m pip install –upgrade pip  
+   31  pip3 install numpy scipy
+   32  pip3 install Cython
+   33  pip3 install numpy scipy
+   34  sudo apt-get install build-essential cmake pkg-config apt-utils
+   35  sudo apt-get install libprotobuf-dev libleveldb-dev libsnappy-dev  protobuf-compiler
+   36  sudo apt-get install libhdf5-serial-dev hdf5-tools zlib1g-dev  libjpeg9-dev libhdf5-dev
+   37  sudo apt-get install libgflags-dev libgoogle-glog-dev
+   38  sudo apt-get install libopenblas-dev libatlas-base-dev 
+   39  sudo pip3 install grpcio absl-py py-cpuinfo psutil portpicker grpcio six mock requests gast astor termcolor
+   40  sudo apt-get install libblosc-dev  libbrotli-dev
+   41  sudo apt-get install libjpeg-dev 
+   42  sudo apt install liblapack-dev
+   43  sudo apt install libblas-dev
+   44  sudo apt install gfortran
+   45  sudo pip3 install blosc
+   46  sudo pip3 install skubuild
+   47  sudo apt-get install python-dev libfreetype6-dev
+   48  sudo apt-get install libfreetype6-dev
+   49  sudo apt-get install libboost-all-dev
+   50  sudo apt-get install libbz2-dev
+   51  sudo apt-get install libgif-dev
+   52  sudo pip3 install --upgrade protobuf
+   53  sudo apt-get install zip libjpeg8-dev liblcms2-dev
+   54  sudo pip3 install pyyaml
+   55  sudo apt-get install libgtk-3-dev libavcodec-dev libavformat-dev python-dev python-numpy python-tk libtbb2 libtbb-dev libjpeg-dev libpng-dev libtiff-dev libdc1394-22-dev libswscale-dev libopenexr-dev libeigen3-dev libfaac-dev libopencore-amrnb-dev libopencore-amrwb-dev libtheora-dev libvorbis-dev libxvidcore-dev libx264-dev libqt4-dev libqt4-opengl-dev sphinx-common texlive-latex-extra libv4l-dev libatlas-base-dev libqtgui4 python3-pyqt5 python3-dev qt5-default
+   56  kit-image
+   57  ——+——+——+——+——+——+——+——+——+——+——+——
+   58  2.tensorflow:
+   59  sudo pip3 install --extra-index-url https://developer.download.nvidia.com/compute/redist/jp/v43 tensorflow-gpu==2.0.0+nv20.1
+   60  sudo apt-get install libgtk-3-dev libavcodec-dev libavformat-dev python-dev python-numpy python-tk libtbb2 libtbb-dev libjpeg-dev libpng-dev libtiff-dev libdc1394-22-dev libswscale-dev libopenexr-dev libeigen3-dev libfaac-dev libopencore-amrnb-dev libopencore-amrwb-dev libtheora-dev libvorbis-dev libxvidcore-dev libx264-dev libqt4-dev libqt4-opengl-dev sphinx-common texlive-latex-extra libv4l-dev libatlas-base-dev libqtgui4 python3-pyqt5 python3-dev qt5-default
+   61  pip3 install scikit-image
+   62  sudo apt install cython libaec-dev libblosc-dev libbrotli-dev libghc-bzlib-dev libgif-dev libopenjp2-7-dev liblcms2-dev libjpeg-dev libjxr-dev liblz4-dev liblzma-dev libpng-dev libsnappy-dev libtiff-dev python3-numpy
+   63  sudo ln -s /usr/include/openjpeg-2.3/* /usr/include/
+   64  sudo ln -s /usr/include/jxrlib/* /usr/include/
+   65  git clone https://github.com/google/brunsli.git
+   66  cd brunsli
+   67  git checkout v0.1
+   68  git submodule update --init --recursive
+   69  mkdir build && cd build
+   70  cmake … -DCMAKE_BUILD_TYPE=Release
+   71  cmake -DCMAKE_BUILD_TYPE=Release
+   72  ls
+   73  cmake ... -DCMAKE_BUILD_TYPE=Release
+   74  cmake .. -DCMAKE_BUILD_TYPE=Release
+   75  make
+   76  sudo make install
+   77  cd ..
+   78  ls
+   79  sudo apt purge libtiff-dev
+   80  git clone https://gitlab.com/libtiff/libtiff
+   81  cd libtiff/
+   82  git checkout v4.1.0
+   83  ./autogen.sh
+   84  ./configure
+   85  make
+   86  sudo make install
+   87  pip3 install imagecodecs==2020.2.18 -i
+   88  pip3 install imagecodecs==2020.2.18 
+   89  pip3 install libwebp
+   90  pip3 install libwebp-dev
+   91  pip3 install libwebp6
+   92  sudo apt-get install  libwebp6 
+   93  sudo apt-get install libwebp-dev
+   94  pip3 install imagecodecs==2020.2.18 
+   95  2020.2.18 
+   96  sudo apt update && sudo apt install apt-file
+   97  sudo  apt-file search zopfli/zopfli.h
+   98  sudo apt update
+   99  sudo  apt-file search zopfli/zopfli.h
+  100  sudo apt-get install libzopfli-dev
+  101  pip3 install imagecodecs==2020.2.18 
+  102  sudo apt-get install imagecodecs/_zstd.c
+  103  sudo  apt-file search imagecodecs/_zstd.c
+  104  sudo apt-file search imagecodecs/_zstd.c
+  105  pip3 install imagecodecs==2020.2.18 -i https://pypi.tuna.tsinghua.edu.cn/simple
+  106  sudo apt-file search imagecodecs/_zstd.h
+  107  sudo apt-file search Search Results
+  108  sudo apt-file search gozstd/zstd.h
+  109  sudo apt-get install zstd
+  110  pip3 install imagecodecs==2020.2.18 -i https://pypi.tuna.tsinghua.edu.cn/simple
+  111  pip3 install imagecodecs==2020.2.18 -i https://pypi.tuna.tsinghua.edu.cn/simple
+  112  pip3 install zstd
+  113  pip3 install imagecodecs==2020.2.18 -i https://pypi.tuna.tsinghua.edu.cn/simple
+  114  sudo apt-get install tifffile czifile python-blosc python-lz4 python-zstd python-lzf python-brotli python-snappy zopflipy bitshuffle 
+  115  sudo apt-get install czifile python-blosc python-lz4 python-zstd python-lzf python-brotli python-snappy zopflipy bitshuffle 
+  116  pip3 install tifffile czifile python-blosc python-lz4 python-zstd python-lzf python-brotli python-snappy zopflipy bitshuffle 
+  117  pip3 install czifile
+  118  pip3 install  python-blosc python-lz4 python-zstd
+  119  sudo apt-get install python-blosc python-lz4 python-zstd
+  120  sudo apt-get install python-blosc python-lz4
+  121  sudo apt-get install python-zstd
+  122  sudo pip3 install python-zstd
+  123  sudo python3.6 install python-zstd
+  124  sudo pip3 install python-zstd
+  125  sudo pip3 install python-lzf python-brotli python-snappy
+  126  sudo pip3 install python-lzf
+  127  sudo pip3 install python-brotli 
+  128  sudo pip3 install python-snappy
+  129  sudo pip3 install zopflipy bitshuffle 
+  130  sudo apt-get install python-zstd 
+  131  sudo pip3 install python-zstd 
+  132  sudo pip3 install --upgrade
+  133  sudo pip3 install --update
+  134  sudo pip install --update
+  135  sudo pip3 install --update
+  136  sudo pip3 install --upgrade
+  137  sudo apt-get install python-zstd 
+  138  sudo apt-get install python2-zstd 
+  139  sudo apt-get install python3-zstd 
+  140  pip3 install zstandard
+  141  pip3 install zstd
+  142  pip3 install zlib lz4 zstd blosc bzip2 liblzma liblzf libpng libwebp libtiff libjpeg-turbo charls openjpeg jxrlib zfp bitshuffle libaec snappy zopfli brotli brunsli giflib lcms
+  143  pip3 install lz4 zstd blosc bzip2 liblzma liblzf libpng libwebp libtiff libjpeg-turbo charls openjpeg jxrlib zfp bitshuffle libaec snappy zopfli brotli brunsli giflib lcms
+  144  pip3 install lz4 zstd bzip2 liblzma liblzf libpng libwebp libtiff libjpeg-turbo charls openjpeg jxrlib zfp bitshuffle libaec snappy zopfli brotli brunsli giflib lcms
+  145  pip3 install liblzma liblzf libpng libwebp libtiff libjpeg-turbo charls openjpeg jxrlib zfp bitshuffle libaec snappy zopfli brotli brunsli giflib lcms
+  146  pip3 install liblzf libpng libwebp libtiff libjpeg-turbo charls openjpeg jxrlib zfp bitshuffle libaec snappy zopfli brotli brunsli giflib lcms
+  147  pip3 install libpng libwebp libtiff libjpeg-turbo charls openjpeg jxrlib zfp bitshuffle libaec snappy zopfli brotli brunsli giflib lcms
+  148  pip3 install libwebp libtiff libjpeg-turbo charls openjpeg jxrlib zfp bitshuffle libaec snappy zopfli brotli brunsli giflib lcms
+  149  sudo apt-get install libwebp libtiff libjpeg-turbo charls openjpeg jxrlib zfp bitshuffle libaec snappy zopfli brotli brunsli giflib lcms
+  150  sudo apt-get install libtiff-dev libjpeg-turbo charls openjpeg jxrlib zfp bitshuffle libaec snappy zopfli brotli brunsli giflib lcms
+  151  sudo apt-get install libtiff-dev 
+  152  sudo apt-get install libtiff libjpeg-turbo-dev charls openjpeg jxrlib zfp bitshuffle libaec snappy zopfli brotli brunsli giflib lcms
+  153  sudo apt-get install libjpeg-turbo-dev charls openjpeg jxrlib zfp bitshuffle libaec snappy zopfli brotli brunsli giflib lcms
+  154  pip3 install imagecodecs==2020.2.18 -i https://pypi.tuna.tsinghua.edu.cn/simple
+  155  ls
+  156  ./installSwapfile.sh 
+  157  reboot
+  158  pip3 install tensorflow-2.1.0+nv20.3-cp36-cp36m-linux_aarch64.whl 
+  159  python3.6
+  160  cvnn -V
+  161  nvcc -V
+  162  sudo wget https://nvidia.box.com/shared/static/3ibazbiwtkl181n95n9em3wtrca7tdzp.whl -O torch-1.5.0-cp36-cp36m-linux_aarch64.whl
+  163  ls
+  164  sudo pip3 install torch-1.5.0-cp36-cp36m-linux_aarch64.whl
+  165  python3.6 import torch
+  166  print(torch.__version__)
+  167  python3.6
+  168  pip3 uninstall pytorch
+  169  pip3 uninstall torch
+  170  sudo pip3 uninstall torch
+  171  sudo wget https://nvidia.box.com/shared/static/ncgzus5o23uck9i5oth2n8n06k340l6k.whl -O torch-1.4.0-cp36-cp36m-linux_aarch64.whl
+  172  sudo pip3 install torch-1.4.0-cp36-cp36m-linux_aarch64.whl
+  173  python3.6
+  174  sudo apt-get install python3-scipy
+  175  sudo pip3 install keras
+  176  ls
+  177  python3.6 main.py 
+  178  sudo pip3 install keras-applications keras-preprocessing
+  179  sudo pip3 install --extra-index-url https://developer.download.nvidia.com/compute/redist/jp/v43 tensorflow-gpu==2.0.0+nv20.1
+  180  python3.6 main.py 
+  181  pip3 install zstd
+  182  pip3 install zstd-dev
+  183  sudo apt install zstd-dev
+  184  sudo apt install zstd
+  185  sudo apt install python-zstd
+  186  /usr/include/
+  187  pip3 install zstandard
+  188  pip3 install libzstd-dev
+  189  sudo apt install libzstd-dev
+  190  /usr/include/
+  191  pip3 install imagecodecs==2020.2.18 -i https://pypi.tuna.tsinghua.edu.cn/simple
+  192  pip3 install scikit-image
+  193  pip3 uninstall torchvision
+  194  sudo pip3 uninstall torchvision
+  195  sudo python3.6 setup.py install
+  196  ls
+  197  cd torchvision
+  198  ls
+  199  cd models/
+  200  ls
+  201  cd ..
+  202  ls
+  203  cd ..
+  204  ls
+  205  cd ..
+  206  ls
+  207  cd Documents/
+  208  ls
+  209  cd PointRend-PyTorch-master--ok/
+  210  ls
+  211  history
