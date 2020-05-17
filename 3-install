@@ -121,7 +121,7 @@ sudo apt-get install --no-install-recommends libboost-all-dev
 
 
 
-——+——+——+——+——+——+——+——+——+——+——+——   2015-05-15 在JP4.3 上安装还是失败
+——+——+——+——+——+——+——+——+——+——+——+——   2015-05-15 在JP4.3 上安装是OK
 https://scikit-image.org/docs/stable/install.html
 Installing  scikit-image： 
 
@@ -132,6 +132,61 @@ sudo apt-get install python3-matplotlib python3-numpy python3-pil python3-scipy 
 
 Install suitable compilers:
 sudo apt-get install build-essential cython3
+
+apt-get install libblosc-dev
+
+
+Install Ubuntu18.04 Dependency:
+
+sudo apt install cython libaec-dev libblosc-dev libbrotli-dev libghc-bzlib-dev libgif-dev libopenjp2-7-dev liblcms2-dev libjpeg-dev libjxr-dev liblz4-dev liblzma-dev libpng-dev libsnappy-dev libtiff-dev python3-numpy
+
+sudo ln -s /usr/include/openjpeg-2.3/* /usr/include/
+sudo ln -s /usr/include/jxrlib/* /usr/include/
+
+git clone https://github.com/google/brunsli.git
+cd brunsli
+git checkout v0.1
+git submodule update --init --recursive
+mkdir build && cd build
+cmake … -DCMAKE_BUILD_TYPE=Release
+make
+sudo make install
+
+
+sudo apt purge libtiff-dev
+git clone https://gitlab.com/libtiff/libtiff
+cd libtiff/
+git checkout v4.1.0
+./autogen.sh
+./configure
+make
+sudo make install
+
+
+
+sudo apt update && sudo apt install apt-file
+# sudo  apt-file search zopfli/zopfli.h
+
+sudo apt-get install libzopfli-dev
+sudo apt-get install libwebp-dev
+sudo sudo pip3 install python-zstd
+pip3 install python-lzf
+pip3 install zstd
+pip3 install zstandard
+sudo apt-get install libtiff-dev
+
+  181  pip3 install zstd
+  182  pip3 install zstd-dev
+  183  sudo apt install zstd-dev
+  184  sudo apt install zstd
+  185  sudo apt install python-zstd
+  186  /usr/include/
+  187  pip3 install zstandard
+  188  pip3 install libzstd-dev
+  189  sudo apt install libzstd-dev
+
+sudo pip3 install imagecodecs==2020.2.18 -i https://pypi.tuna.tsinghua.edu.cn/simple
+
 
 sudo pip3 install scikit-image
 ——+——+——+——+——+——+——+——+——+——+——+——
@@ -170,6 +225,8 @@ print(torch.__version__)
 
 
 5.
+
+5.1
 torchvision：
 
 sudo apt-get install libjpeg-dev zlib1g-dev
@@ -179,6 +236,7 @@ sudo python3.6 setup.py install
 #  https://blog.csdn.net/u011119817/article/details/99679350
 
 ------------
+5.2
 torchvision       安装成功过： 0.6.0版本最新。
 
 sudo pip3 install torchvision
@@ -191,6 +249,14 @@ $ cd ../  # attempting to load torchvision from build dir will result in import 
 $ pip install 'pillow<7' # not needed for torchvision v0.5.0+
 #https://forums.developer.nvidia.com/t/pytorch-for-jetson-nano-version-1-5-0-now-available/72048
 #  就算完成了安装0.6.0 也不能识别  pointrend 的分割代码。最后显示：
+
+5.3  need to install the source code so that include the lab dev.
+
+sudo pip3 install torchvision
+https://github.com/pytorch/vision
+python setup.py install
+
+
 
 
 -----------------------------------------------------------
