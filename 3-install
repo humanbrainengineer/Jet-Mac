@@ -69,7 +69,7 @@ sudo apt install gfortran
 
 sudo pip3 install blosc
 
-udo apt-get install python-dev libfreetype6-dev
+sudo apt-get install python-dev libfreetype6-dev
 sudo apt-get install libfreetype6-dev
 sudo ln -s /usr/include/freetype2/freetype/ /usr/include/freetype
 sudo apt-get install libfontconfig1-dev
