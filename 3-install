@@ -242,7 +242,7 @@ print(torch.__version__)
 
 
 
-5.
+5.    tried the 5.3 was okay.
 
 5.1
 torchvision：
@@ -268,7 +268,7 @@ $ pip install 'pillow<7' # not needed for torchvision v0.5.0+
 #https://forums.developer.nvidia.com/t/pytorch-for-jetson-nano-version-1-5-0-now-available/72048
 #  就算完成了安装0.6.0 也不能识别  pointrend 的分割代码。最后显示：
 
-5.3  need to install the source code so that include the lab dev.
+5.3  need to install the source code so that include the lab dev.( try  this only)
 
 sudo pip3 install torchvision
 https://github.com/pytorch/vision
