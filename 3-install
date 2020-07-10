@@ -277,7 +277,8 @@ python setup.py install
 sudo pip3 install torchvision==0.2.2
 sudo pip3 install cnn_finetune==0.2.2
 
-
+sudo pip3 install tensorboardX 
+sudo pip3 install tensorboard_logger
 
 -----------------------------------------------------------
 jet@jet-desktop:~/Documents/PointRend-PyTorch-master--ok$ python3.6 main.py configs/default.yaml test_codes
