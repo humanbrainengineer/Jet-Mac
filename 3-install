@@ -270,10 +270,12 @@ $ pip install 'pillow<7' # not needed for torchvision v0.5.0+
 
 5.3  need to install the source code so that include the lab dev.( try  this only)
 
-sudo pip3 install torchvision
+sudo pip3 install torchvision                       #only tried  this 
 https://github.com/pytorch/vision
 python setup.py install
 
+sudo pip3 install torchvision==0.2.2
+sudo pip3 install cnn_finetune==0.2.2
 
 
 
