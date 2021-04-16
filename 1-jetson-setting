@@ -64,7 +64,9 @@ Install the VNCViewer， https://www.realvnc.com/en/connect/download/viewer/
 
 
 10.
+/usr/lib/vino/vino-server  #execute this command ！！
 
+or
 /usr/lib/vino/vino-server  ####-------------------------------！ Put it to start with System.
 
 # sudo vim  ~/.bashrc
