@@ -28,15 +28,15 @@ OpenCV   /usr/share/opencv4/samples/
 
 
 
-2.1  checking the CUDA：
+2.1  checking the CUDA：（Everytime, NEED to check the version of cuda below and change the version number.）
 
 sudo nano ~/.bashrc
 
 adding：
 
-export CUDA_HOME=/usr/local/cuda-10.0
-export LD_LIBRARY_PATH=/usr/local/cuda-10.0/lib64:$LD_LIBRARY_PATH
-export PATH=/usr/local/cuda-10.0/bin:$PATH
+export CUDA_HOME=/usr/local/cuda-10.2
+export LD_LIBRARY_PATH=/usr/local/cuda-10.2/lib64:$LD_LIBRARY_PATH
+export PATH=/usr/local/cuda-10.2/bin:$PATH
 
 
 /usr/lib/vino/vino-server
