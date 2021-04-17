@@ -97,7 +97,8 @@ sudo python3 -m pip install -U numpy absl-py py-cpuinfo psutil portpicker grpcio
 
 #***
  pip3 install cython
- sudo apt update && apt install -y python3-h5py
+ sudo apt update 
+ apt install -y python3-h5py  #这个代替 pip3 install h5py
  #***
 
 
