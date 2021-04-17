@@ -216,8 +216,10 @@ sudo pip3 install scikit-image
 
 2.tensorflow:
 sudo pip3 install --extra-index-url https://developer.download.nvidia.com/compute/redist/jp/v43 tensorflow-gpu==2.0.0+nv20.1
-#https://developer.download.nvidia.com/compute/redist/jp/v43/
 
+#以下链接要fq才可以下载
+#https://developer.download.nvidia.com/compute/redist/jp/v43/
+#https://developer.download.nvidia.com/compute/redist/jp/v45/tensorflow/
 
 3.testing the tensorflow：
 
@@ -249,14 +251,14 @@ print(torch.__version__)
 torchvision：
 
 sudo apt-get install libjpeg-dev zlib1g-dev
-git clone -b v0.3.0 https://github.com/pytorch/vision torchvision   #0.6.0
+git clone -b v0.3.0 https://github.com/pytorch/vision torchvision   #0.6.0 和 0.9.1
 cd torchvision
 sudo python3.6 setup.py install
 #  https://blog.csdn.net/u011119817/article/details/99679350
 
 ------------
 5.2
-torchvision       安装成功过： 0.6.0版本最新。
+torchvision       安装成功过： 0.6.0版本最新 和 0.9.1
 
 sudo pip3 install torchvision
 
