@@ -24,7 +24,7 @@ CUDA       /usr/local/cuda-/samples/
 cuDNN     /usr/src/cudnn_samples_v7/
 Multimedia API        /usr/src/tegra_multimedia_api/
 VisionWorks     /usr/share/visionworks/sources/samples/ /usr/share/visionworks-tracking/sources/samples/ /usr/share/visionworks-sfm/sources/samples/
-OpenCV   /usr/share/OpenCV/samples/
+OpenCV   /usr/share/opencv4/samples/
 
 
 
