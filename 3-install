@@ -109,7 +109,6 @@ sudo apt-get install zip libjpeg8-dev liblcms2-dev
 
 
 Python Packages：
-sudo pip3 install cython
 sudo pip3 install sklearn pandas 
 sudo pip3 install pyyaml
 
