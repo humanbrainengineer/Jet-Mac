@@ -167,7 +167,7 @@ cd brunsli
 git checkout v0.1
 git submodule update --init --recursive
 mkdir build && cd build
-cmake … -DCMAKE_BUILD_TYPE=Release
+cmake .. -DCMAKE_BUILD_TYPE=Release
 make
 sudo make install
 
