@@ -30,7 +30,7 @@ OpenCV   /usr/share/opencv4/samples/
 
 2.1  checking the CUDA：
 
-sudo vim  ~/.bashrc
+sudo nano ~/.bashrc
 
 adding：
 
