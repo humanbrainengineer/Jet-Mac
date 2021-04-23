@@ -133,10 +133,7 @@ Bazel：
 sudo apt-get install zlib1g-dev unzip openjdk-8-jdk
 
 
-（caffee）  http://www.luohanjie.com/2019-07-17/nvidia-jetson-nano.html
-sudo apt-get install libhdf5-serial-dev libleveldb-dev libprotobuf-dev libsnappy-dev protobuf-compiler libgflags-dev libgoogle-glog-dev liblmdb-dev libatlas-base-dev libblas-dev libatlas-base-dev
-
-sudo apt-get install --no-install-recommends libboost-all-dev
+ 
 
 
 
