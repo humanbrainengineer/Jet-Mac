@@ -58,7 +58,7 @@ opencv_version
 2.3  checking the   cudnn
 
 
-cd /usr/src/cudnn_samples_v7/mnistCUDNN
+cd /usr/src/cudnn_samples_v8/mnistCUDNN
 
 sudo make    
 
